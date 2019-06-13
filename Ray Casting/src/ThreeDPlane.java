@@ -98,7 +98,7 @@ public class ThreeDPlane implements ThreeDObject {
     if(p.length == 3) r = p[ 2 ];
     double x     = r * Math.sin(theta) * Math.cos(phi);
     double y     = r * Math.sin(theta) * Math.sin(phi);
-    double z     = r * Math.cos(phi);
+    double z     = r * Math.cos(theta);
     double[] ret = { x, y, z };
     return ret;
   }
