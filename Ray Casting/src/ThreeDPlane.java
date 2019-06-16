@@ -19,6 +19,10 @@ public class ThreeDPlane implements ThreeDObject {
     this.color   = color;
   }
 
+  public double[] get() {
+    return localUp.clone();
+  }
+
   /**
   *
   * <p>Formula used for intersection detection:</p>
@@ -46,21 +50,15 @@ public class ThreeDPlane implements ThreeDObject {
   */
   public ObjectData data(Ray ray) {
     double[] p0        = { localUp[ 0 ], localUp[ 1 ], localUp[ 2 ] };
-    System.out.println( "p0:\n"+Util.vecToString(p0) );
     double[] temp      = ray.get();
     double[] l0        = { temp[ 0 ], temp[ 1 ], temp[ 2 ] };
-    System.out.println( "l0:\n"+Util.vecToString(l0) );
     double[] temp2     = { localUp[ 3 ], localUp[ 4 ] };
     double[] n         = Util.toCartesian( temp2 );
-    System.out.println( "n:\n"+Util.vecToString(n) );
     double[] temp3     = { temp[ 3 ], temp[ 4 ] };
     double[] l         = Util.toCartesian( temp3 );
-    System.out.println( "l:\n"+Util.vecToString(l) );
     double denominator = Util.dot( l, n );
-    System.out.println( "denominator:\n"+denominator );
     if (denominator == 0) return null;
     double numerator   = Util.dot( Util.sub( p0, l0 ), n );
-    System.out.println( "numerator:\n"+numerator );
     double d           = numerator / denominator;
     return new ObjectData( d, color );
   }

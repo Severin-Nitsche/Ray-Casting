@@ -39,4 +39,9 @@ public class Ray {
     return ret;
   }
 
+  @Override
+  public String toString() {
+    return "x: "+position[ X ]+"\r\ny: "+position[ Y ]+"\r\nz: "+position[ Z ]+"\r\ntheta: "+direction[ 0 ]+"\r\nphi: "+direction[ 1 ];
+  }
+
 }
