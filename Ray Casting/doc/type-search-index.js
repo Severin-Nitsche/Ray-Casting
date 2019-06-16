@@ -1,1 +1,1 @@
-typeSearchIndex = [{"p":"<Unnamed>","l":"Color"},{"p":"<Unnamed>","l":"ObjectData"},{"p":"<Unnamed>","l":"Ray"},{"p":"<Unnamed>","l":"ThreeDObject"},{"p":"<Unnamed>","l":"ThreeDPlane"}]
+typeSearchIndex = [{"p":"<Unnamed>","l":"Color"},{"p":"<Unnamed>","l":"Main"},{"p":"<Unnamed>","l":"ObjectData"},{"p":"<Unnamed>","l":"Ray"},{"p":"<Unnamed>","l":"Sphere"},{"p":"<Unnamed>","l":"ThreeDObject"},{"p":"<Unnamed>","l":"ThreeDPlane"},{"p":"<Unnamed>","l":"Util"}]
