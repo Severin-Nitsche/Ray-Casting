@@ -4,6 +4,24 @@ public class Viewer {
   ThreeDPlane      screen;
   ThreeDObject[]   objects;
 
+  public Viewer( int width, int height, int density, Screen screen, ThreeDObject ... world ) {
+    this.screen = screen;
+    this.rays   = new Ray[ width * density ][ height * density ];
+
+    for (int x = 0; x < width * density; x++) {
+      for (int y = 0; y < height * density; y++) {
+
+        double   X          = ( (double) x - (double) ( width  * density - 1 ) / 2d ) / ( (double) ( width  * density - 1 ) / 2d );
+        double   Y          = ( (double) y - (double) ( height * density - 1 ) / 2d ) / ( (double) ( height * density - 1 ) / 2d );
+        this.rays[ x ][ y ] = screen.get( 0, 0, 0, X, Y, world );
+
+      }
+    }
+
+    this.objects = world;
+    
+  }
+
   public Viewer( int width, int height, int density, ThreeDPlane screen, ThreeDObject...objects ) {
 
     this.screen  = screen;

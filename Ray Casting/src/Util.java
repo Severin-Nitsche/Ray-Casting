@@ -1,5 +1,10 @@
 public class Util {
 
+
+      public static final int X = 0;
+      public static final int Y = 1;
+      public static final int Z = 2;
+
       /**
       *
       * @params a -&gt; A vector, b -&gt; A vector
@@ -19,7 +24,7 @@ public class Util {
 
       /**
       *
-      * <p>converts from polar to cartesian</p>
+      * <p>converts from spherical to cartesian</p>
       * <p>if the length of p is 2 the value 1 is assumed for r</p>
       * <p>The general form of p should be {theta, phi, r}</p>
       *
@@ -37,6 +42,20 @@ public class Util {
         return ret;
       }
 
+      /**
+      *
+      * @params c - the cartesian coordinates
+      * @returns a spherical representation of c
+      *
+      */
+      public static double[] toSpherical(double[] c) {
+        double   rho         = Math.sqrt( c[ X ] * c[ X ] + c[ Y ] * c[ Y ] + c[ Z ] * c[ Z ] );
+        double   phi         = Math.atan2( c[ Y ], c[ X ] );
+        double   theta       = Math.acos( c[ Z ] / rho );
+        double[] returnValue = { theta, phi, rho };
+        return returnValue;
+      }
+
       public static double[] sub(double[] a, double[] b) {
         if(a.length != b.length) throw new IllegalArgumentException("Vectors have to have equal length");
         double[] ret = new double[ a.length ];
@@ -44,6 +63,30 @@ public class Util {
           ret[ i ]   = a[ i ] - b[ i ];
         }
         return ret;
+      }
+
+      public static double[] add(double[] a, double[] b) {
+        if(a.length != b.length) throw new IllegalArgumentException("Vectors have to have equal length");
+        double[] ret = new double[ a.length ];
+        for (int i=0; i<a.length; i++) {
+          ret[ i ]   = a[ i ] + b[ i ];
+        }
+        return ret;
+      }
+
+      public static double[] cross(double[] a, double[] b) {
+        double[] returnValue = { a[ Y ] * b[ Z ] - a[ Z ] * b[ Y ],
+                                 a[ Z ] * b[ X ] - a[ X ] * b[ Z ],
+                                 a[ X ] * b[ Y ] - a[ Y ] * b[ X ] };
+        return returnValue;
+      }
+
+      public static double[] multiply(double[] a, double b) {
+        double[] returnValue = a.clone();
+        for (int index = 0; index < a.length; index++ ) {
+          returnValue[ index ] *= b;
+        }
+        return returnValue;
       }
 
       public static String vecToString(double[] a) {

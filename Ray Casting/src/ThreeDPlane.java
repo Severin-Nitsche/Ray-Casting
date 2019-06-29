@@ -1,7 +1,11 @@
 public class ThreeDPlane implements ThreeDObject {
 
-  private Color color;
-  private double localUp[];
+  protected Color color;
+  protected double localUp[];
+
+  protected ThreeDPlane() {
+    
+  }
 
   /**
   *

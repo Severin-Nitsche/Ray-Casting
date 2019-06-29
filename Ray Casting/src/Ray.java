@@ -35,7 +35,7 @@ public class Ray {
   }
 
   public double[] get() {
-    double[] ret={position[ X ], position[ Y ], position[ Z ], direction[ 0 ], direction[ 1 ]};
+    double[] ret = { position[ X ], position[ Y ], position[ Z ], direction[ 0 ], direction[ 1 ] };
     return ret;
   }
 
