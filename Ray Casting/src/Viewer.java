@@ -4,6 +4,41 @@ public class Viewer {
   ThreeDPlane      screen;
   ThreeDObject[]   objects;
 
+  public Viewer(double xLocation, double yLocation, double zLocation, int width, int height, int density, double[] frontDirection, double[] leftDirection, double screenDistance, ThreeDObject ... world ) {
+    double[] front = Util.toCartesian( frontDirection );
+    this.screen    = new Screen      ( xLocation + screenDistance * front[ 0 ], yLocation + screenDistance * front[ 1 ], zLocation + screenDistance * front[ 2 ], frontDirection[ 0 ], frontDirection[ 1 ], leftDirection[ 0 ], leftDirection[1] );
+    this.rays      = new Ray[ width * density ][ height * density ];
+
+    for (int x = 0; x < width * density; x++) {
+      for (int y = 0; y < height * density; y++) {
+
+        double   X          = ( (double) x - (double) ( width  * density - 1 ) / 2d ) / ( (double) ( width  * density - 1 ) / 2d );
+        double   Y          = ( (double) y - (double) ( height * density - 1 ) / 2d ) / ( (double) ( height * density - 1 ) / 2d );
+        this.rays[ x ][ y ] = ( (Screen) screen ).get( xLocation, yLocation, zLocation, X, Y, world );
+
+      }
+    }
+
+    this.objects = world;
+  }
+
+  public Viewer( double xLocation, double yLocation, double zLocation, int width, int height, int density, Screen screen, ThreeDObject ... world ) {
+    this.screen = screen;
+    this.rays   = new Ray[ width * density ][ height * density ];
+
+    for (int x = 0; x < width * density; x++) {
+      for (int y = 0; y < height * density; y++) {
+
+        double   X          = ( (double) x - (double) ( width  * density - 1 ) / 2d ) / ( (double) ( width  * density - 1 ) / 2d );
+        double   Y          = ( (double) y - (double) ( height * density - 1 ) / 2d ) / ( (double) ( height * density - 1 ) / 2d );
+        this.rays[ x ][ y ] = screen.get( xLocation, yLocation, zLocation, X, Y, world );
+
+      }
+    }
+
+    this.objects = world;
+  }
+
   public Viewer( int width, int height, int density, Screen screen, ThreeDObject ... world ) {
     this.screen = screen;
     this.rays   = new Ray[ width * density ][ height * density ];
@@ -19,7 +54,7 @@ public class Viewer {
     }
 
     this.objects = world;
-    
+
   }
 
   public Viewer( int width, int height, int density, ThreeDPlane screen, ThreeDObject...objects ) {
