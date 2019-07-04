@@ -1,6 +1,7 @@
 html {
   height: 100vh;
   background-image: url("../images/KI2.svg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -8,18 +9,39 @@ html {
 body {
   width: 100%;
   background-color: rgba(255,255,255,0.5);
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   position: absolute;
   top: 0;
 }
 
 iframe {
+  display: block;
   width: 100%;
   border: none;
-  height: calc(5em + 2pt);
+  overflow: hidden;
+}
+
+.bar {
+  height: calc(5em + 4pt);
+}
+
+.footer {
+  height: 5em;
+  position: static;
+  bottom: 0;
+  left: 0;
 }
 
 img {
   width: 50%;
+}
+
+a, a:visited {
+  color: #AAA;
+  transition: .1s;
+}
+
+a:hover {
+  color: #CCC;
 }
