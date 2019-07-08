@@ -1,1 +1,0 @@
-Die Methode data(Ray r) gibt ein DataObject zurück, dass die Entfernung des Strahls, sowie die getroffene Farbe auf dem Objekt enthält. Diese Informationen werden dann von der <a href="Viewer.html">Viewer-Klasse</a> verarbeitet.
