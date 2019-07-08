@@ -6,7 +6,8 @@ async function getText(url) {
 }
 
 async function setlang(lang) {
-  blob = await getText(lang+".lang");
+  current = document.location.pathname.substring(document.location.pathname.lastIndexOf('/')+1,document.location.pathname.lastIndexOf('.'));
+  blob = await getText(current+"-"+lang+".lang");
   single = blob.split("\n");
   p = document.getElementsByTagName('p');
   for(let i=0; i<p.length; i++) {
