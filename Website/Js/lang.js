@@ -11,6 +11,6 @@ async function setlang(lang) {
   single = blob.split("\n");
   p = document.getElementsByTagName('p');
   for(let i=0; i<p.length; i++) {
-    p[i].textContent = single[i];
+    p[i].innerHTML = single[i];
   }
 }
