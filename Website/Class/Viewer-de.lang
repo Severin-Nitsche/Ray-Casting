@@ -1,0 +1,3 @@
+public Viewer(double xLocation, double yLocation, double zLocation, int width, int height, int density, double[] frontDirection, double[] leftDirection, double screenDistance, ThreeDObject ... world )
+Die Viewer-Klasse ist die Kamera Klasse. D.h. braucht sie eine Ausrichtung, diese wird durch die frontDirection (Blickrichtung) und die leftDirection (Rotation) bestimmt. X-, Y- und Location stellen die Position der Kamera dar.  Die Breite und Höhe werden von width und height bestimmt. Density ist die Auflösung (Strahlen bzw. Pixel pro Einheit). World steht für die 3DObjekte der Simulation. Der einzig verwirrende Parameter ist screen distance, der die Distanz des Bildschirms zu den Strahlen darstellt (|f|, siehe unten).
+Hier noch einige Erinnerungen mit weiteren Details.
