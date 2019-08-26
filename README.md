@@ -1,6 +1,6 @@
 # Ray-Casting
 ## Language
-[Deutsch](Readme.de.md) [English](Readme.md)
+[Deutsch](README.de.md) [English](README.md)
 ### About
 The Ray Casting project offers the opportunity to render simple scenes with simplistic geometric objects
 ### Setup
