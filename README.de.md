@@ -1,9 +1,9 @@
 # Ray-Casting
-# Language
+## Sprache
 [Deutsch](Readme.de.md) [English](Readme.md)
-# About
+### Information
 Das Ray Casting Projekt bietet die Möglichkeit einfache Szenen mit simplen geometrischen Objekten problemlos zu rendern.
-# Setup
+### Beginnen
 1. Lade dir das Repository herunter und öffne unter <code>Ray Casting/src/</code> die <code>Main.java</code> Datei.
 2. Erstelle die Objekte die du rendern möchtest
 3. Erstelle einen neuen Viewer und Übergebe ihm die Objekte in Arrayform
