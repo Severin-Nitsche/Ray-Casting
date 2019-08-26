@@ -4,12 +4,12 @@ public class ThreeDPlane implements ThreeDObject {
   protected double localUp[];
 
   protected ThreeDPlane() {
-    
+
   }
 
   /**
   *
-  * @params x, y, z, direction1, direction2 are the specification of the normal vector, where x, y and z are a generic vector of the plane and direction1 and direction2 denote the normal for the given point in polar form.<br />
+  * @param x, y, z, direction1, direction2 are the specification of the normal vector, where x, y and z are a generic vector of the plane and direction1 and direction2 denote the normal for the given point in polar form.<br />
   *         color is the color of the plane.
   *
   */
@@ -53,18 +53,24 @@ public class ThreeDPlane implements ThreeDObject {
   *
   */
   public ObjectData data(Ray ray) {
-    double[] p0        = { localUp[ 0 ], localUp[ 1 ], localUp[ 2 ] };
-    double[] temp      = ray.get();
-    double[] l0        = { temp[ 0 ], temp[ 1 ], temp[ 2 ] };
-    double[] temp2     = { localUp[ 3 ], localUp[ 4 ] };
-    double[] n         = Util.toCartesian( temp2 );
-    double[] temp3     = { temp[ 3 ], temp[ 4 ] };
-    double[] l         = Util.toCartesian( temp3 );
-    double denominator = Util.dot( l, n );
+    double[] p0         = { localUp[ 0 ], localUp[ 1 ], localUp[ 2 ] };
+    double[] temp       = ray.get();
+    double[] l0         = { temp[ 0 ], temp[ 1 ], temp[ 2 ] };
+    double[] temp2      = { localUp[ 3 ], localUp[ 4 ] };
+    double[] n          = Util.toCartesian( temp2 );
+    double[] temp3      = { temp[ 3 ], temp[ 4 ] };
+    double[] l          = Util.toCartesian( temp3 );
+    double denominator  = Util.dot( l, n );
     if (denominator == 0) return null;
-    double numerator   = Util.dot( Util.sub( p0, l0 ), n );
-    double d           = numerator / denominator;
-    return new ObjectData( d, color );
+    double numerator    = Util.dot( Util.sub( p0, l0 ), n );
+    double d            = numerator / denominator;
+    //----- calculating the projection and rejection of the ray onto the normal
+    double[] projection = Util.multiply( n, Util.dot( l, n ) );
+    double[] rejection  = Util.sub( l, projection );
+    double[] reflection = Util.toSpherical( Util.sub( rejection, projection ) );
+    //x: ray.x + d * l.x, y: ...
+    Ray      reflected  = new Ray( temp[ 0 ] + d * l[ 0 ], temp[ 1 ] + d * l[ 1 ], temp[ 2 ] + d * l[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
+    return new ObjectData( d, color, reflected );
   }
 
 

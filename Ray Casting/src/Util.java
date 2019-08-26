@@ -7,8 +7,8 @@ public class Util {
 
       /**
       *
-      * @params a -&gt; A vector, b -&gt; A vector
-      * @returns the dot product
+      * @param a -&gt; A vector, b -&gt; A vector
+      * @return the dot product
       *
       * <p class="warning">!!!IMPORTANT!!! a and b have to have equal lengths</p>
       *
@@ -44,8 +44,8 @@ public class Util {
 
       /**
       *
-      * @params c - the cartesian coordinates
-      * @returns a spherical representation of c
+      * @param c - the cartesian coordinates
+      * @return a spherical representation of c
       *
       */
       public static double[] toSpherical(double[] c) {
@@ -87,6 +87,43 @@ public class Util {
           returnValue[ index ] *= b;
         }
         return returnValue;
+      }
+
+      /**
+      *
+      * @return the projection of a onto b
+      *
+      */
+      public static double[] project(double[] a, double[] b) {
+        double[] projection = multiply( b, Util.dot( a, b ) / squaredMagnitude( b ) );
+        return projection;
+      }
+
+      /**
+      *
+      * @return the rejection from a on b
+      *
+      */
+      public static double[] reject(double[] a, double[] b) {
+        double[] rejection = sub( a, project( a, b ) );
+        return rejection;
+      }
+
+      public static double squaredMagnitude(double[] a) {
+        double result = 0;
+        for( int i = 0; i < a.length; i++ ) {
+          result += a[ i ] * a[ i ];
+        }
+        return result;
+      }
+
+      public static double magnitude(double[] a) {
+        double result = 0;
+        for( int i = 0; i < a.length; i++ ) {
+          result += a[ i ] * a[ i ];
+        }
+        result = Math.sqrt( result );
+        return result;
       }
 
       public static String vecToString(double[] a) {

@@ -39,6 +39,14 @@ public class Ray {
     return ret;
   }
 
+  public ThreeDPlane getScreen() {
+    return screen;
+  }
+
+  public ThreeDObject[] getObjects() {
+    return objects;
+  }
+
   @Override
   public String toString() {
     return "x: "+position[ X ]+"\r\ny: "+position[ Y ]+"\r\nz: "+position[ Z ]+"\r\ntheta: "+direction[ 0 ]+"\r\nphi: "+direction[ 1 ];
