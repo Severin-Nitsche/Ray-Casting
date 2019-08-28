@@ -7,6 +7,12 @@ public class Ray {
   private double direction[];
   private ThreeDObject[] objects;
   private ThreeDPlane screen;
+  private int reflections = 1;
+
+  public Ray(double x, double y, double z, double direction1, double direction2, ThreeDPlane screen, int reflections, ThreeDObject ... objects) {
+    this( x, y, z, direction1, direction2, screen, objects);
+    this.reflections = reflections;
+  }
 
   public Ray(double x, double y, double z, double direction1, double direction2, ThreeDPlane screen, ThreeDObject ... objects) {
     this.position      = new double[ 3 ];
@@ -21,15 +27,29 @@ public class Ray {
   }
 
   public Color getColor() {
-    double threshhold = screen.data(this).distance;
-    double record     = Double.POSITIVE_INFINITY;
-    Color color       = null;
-    for (ThreeDObject object : objects) {
-      ObjectData temporaryData = object.data(this);
-      if (temporaryData.distance < record && temporaryData.distance > threshhold) {
-        record = temporaryData.distance;
-        color  = temporaryData.color;
+
+    Ray      check    = this;
+    Color[]  colors   = new Color[ reflections ];
+    double[] strength = new double[ reflections ];
+    ObjectData champ = null;
+    for( int r = 0; r < reflections; r++ ) {
+      double record     = Double.POSITIVE_INFINITY;
+      for (ThreeDObject object : objects) {
+        ObjectData temporaryData = object.data(check);
+        if (temporaryData.distance < record && temporaryData.distance > 0) {
+          record        = temporaryData.distance;
+          colors  [ r ] = temporaryData.color;
+          strength[ r ] = temporaryData.reflectance;
+          champ         = temporaryData.clone();
+        }
       }
+      check = champ.reflection;
+    }
+
+    Color  color      = null;
+    for( int r = reflections - 1; r >= 0; r-- ) {
+      color = colors[ r ];
+      if(color != null) break;
     }
     return color;
   }

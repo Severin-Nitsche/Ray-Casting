@@ -1,6 +1,7 @@
 public class ThreeDPlane implements ThreeDObject {
 
   protected Color color;
+  protected double reflectance;
   protected double localUp[];
 
   protected ThreeDPlane() {
@@ -9,18 +10,23 @@ public class ThreeDPlane implements ThreeDObject {
 
   /**
   *
-  * @param x, y, z, direction1, direction2 are the specification of the normal vector, where x, y and z are a generic vector of the plane and direction1 and direction2 denote the normal for the given point in polar form.<br />
-  *         color is the color of the plane.
+  * @param x - plane position
+  * @param y - plane position
+  * @param z - plane position
+  * @param direction1 - normal direction
+  * @param direction2 - normal direction
+  * @param color - The color of the plane
   *
   */
-  public ThreeDPlane(double x, double y, double z, double direction1, double direction2, Color color) {
-    localUp      = new double[ 5 ];
-    localUp[ 0 ] = x;
-    localUp[ 1 ] = y;
-    localUp[ 2 ] = z;
-    localUp[ 3 ] = direction1;
-    localUp[ 4 ] = direction2;
-    this.color   = color;
+  public ThreeDPlane(double x, double y, double z, double direction1, double direction2, Color color, double reflectance) {
+    localUp          = new double[ 5 ];
+    localUp[ 0 ]     = x;
+    localUp[ 1 ]     = y;
+    localUp[ 2 ]     = z;
+    localUp[ 3 ]     = direction1;
+    localUp[ 4 ]     = direction2;
+    this.color       = color;
+    this.reflectance = reflectance;
   }
 
   public double[] get() {
@@ -70,7 +76,7 @@ public class ThreeDPlane implements ThreeDObject {
     double[] reflection = Util.toSpherical( Util.sub( rejection, projection ) );
     //x: ray.x + d * l.x, y: ...
     Ray      reflected  = new Ray( temp[ 0 ] + d * l[ 0 ], temp[ 1 ] + d * l[ 1 ], temp[ 2 ] + d * l[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
-    return new ObjectData( d, color, reflected );
+    return new ObjectData( d, color, reflected, reflectance );
   }
 
 

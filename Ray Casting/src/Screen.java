@@ -68,4 +68,14 @@ public class Screen extends ThreeDPlane {
     return returnValue;
   }
 
+  public Ray get( double globalX, double globalY, double globalZ, double localX, double localY, int reflections, ThreeDObject ... world ) {
+    //need to finish convert and use formulas from viewer
+    double[] globalVector = { globalX, globalY, globalZ };
+    double[] localVector = convert( localX, localY );
+             localVector = Util.sub( localVector, globalVector );
+             localVector = Util.toSpherical( localVector );
+    Ray      returnValue = new Ray( globalX, globalY, globalZ, localVector[ 0 ], localVector[ 1 ], this, reflections, world );
+    return returnValue;
+  }
+
 }

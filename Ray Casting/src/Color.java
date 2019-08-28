@@ -32,6 +32,13 @@ public class Color {
     return (rgb >> colorComponent) & 0xff;
   }
 
+  public Color overlay(Color c, double strength) {
+    if(c.getRGB() != 0) {
+      setRGB(c.getRGB());
+    }
+    return this;
+  }
+
   @Override
   public String toString() {
     return ""+rgb;

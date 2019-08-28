@@ -1,19 +1,21 @@
 public class Sphere implements ThreeDObject {
 
   Color color;
+  double reflectance;
 
   double radius;
   double[] center;
 
-  public Sphere( double x, double y, double z, double radius, Color color) {
-    this.color     = color;
+  public Sphere( double x, double y, double z, double radius, Color color, double reflectance ) {
+    this.color       = color;
+    this.reflectance = reflectance;
 
-    this.radius    = radius;
+    this.radius      = radius;
 
-    this.center    = new double[3];
-    this.center[0] = x;
-    this.center[1] = y;
-    this.center[2] = z;
+    this.center      = new double[3];
+    this.center[0]   = x;
+    this.center[1]   = y;
+    this.center[2]   = z;
   }
 
   public ObjectData data(Ray ray) {
@@ -41,9 +43,9 @@ public class Sphere implements ThreeDObject {
 
     double[] reflection = Util.sub( rejection, projection );
              reflection = Util.toSpherical( reflection );
-    Ray      reflected  = new Ray( temp[ 0 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 0 ], temp[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], temp[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
+    Ray      reflected  = new Ray( p0[ 0 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 0 ], p0[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], p0[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
 
-    return new ObjectData( d2 >= 0 ? d2 : d1, color, reflected );
+    return new ObjectData( d2 >= 0 && d2 < d1 ? d2 : d1, color, reflected, reflectance );
  }
 
 }
