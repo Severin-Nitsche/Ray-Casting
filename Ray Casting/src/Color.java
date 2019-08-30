@@ -33,9 +33,19 @@ public class Color {
   }
 
   public Color overlay(Color c, double strength) {
-    if(c.getRGB() != 0) {
-      setRGB(c.getRGB());
-    }
+    int red    = get(RED);
+    int green  = get(GREEN);
+    int blue   = get(BLUE);
+    
+    int cRed   = c.get(RED);
+    int cGreen = c.get(GREEN);
+    int cBlue  = c.get(BLUE);
+
+    int nRed   = (int) ((1d - strength) * red + strength * cRed);
+    int nGreen = (int) ((1d - strength) * green + strength * cGreen);
+    int nBlue  = (int) ((1d - strength) * blue + strength * cBlue);
+
+    setRGB((byte)nRed,(byte)nGreen,(byte)nBlue);
     return this;
   }
 
