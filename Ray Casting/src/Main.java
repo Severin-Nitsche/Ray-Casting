@@ -32,6 +32,14 @@ public class Main {
     frame.setVisible( true );
     frame.setSize( 600, 610 );
 
+    Light light = new Light() {};
+    light.objects = new ThreeDObject[1];
+    light.objects[0] = sphere2;
+    double[] test = {0,0,1.5};
+    double[] test2 = {0,0,0};
+    light.position = test2;
+    System.out.println(light.isLit(test));
+
   }
 
 }
