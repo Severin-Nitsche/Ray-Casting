@@ -48,8 +48,8 @@ public class Ray {
 
     Color  color      = null;
     for( int r = reflections - 1; r >= 0; r-- ) {
-      color = colors[ r ];
-      if(color != null) break;
+      if (color == null) color = colors[ r ];
+      else color.overlay(colors[r], strength[ r ]);
     }
     return color;
   }

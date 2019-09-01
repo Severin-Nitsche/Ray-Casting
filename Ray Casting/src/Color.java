@@ -36,7 +36,7 @@ public class Color {
     int red    = get(RED);
     int green  = get(GREEN);
     int blue   = get(BLUE);
-    
+
     int cRed   = c.get(RED);
     int cGreen = c.get(GREEN);
     int cBlue  = c.get(BLUE);
@@ -52,6 +52,11 @@ public class Color {
   @Override
   public String toString() {
     return ""+rgb;
+  }
+
+  @Override
+  public Color clone() {
+    return new Color(rgb);
   }
 
 }
