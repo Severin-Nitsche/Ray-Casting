@@ -76,7 +76,7 @@ public class ThreeDPlane implements ThreeDObject {
     double[] reflection = Util.toSpherical( Util.sub( rejection, projection ) );
     //x: ray.x + d * l.x, y: ...
     Ray      reflected  = new Ray( temp[ 0 ] + d * l[ 0 ], temp[ 1 ] + d * l[ 1 ], temp[ 2 ] + d * l[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
-    return new ObjectData( d, color, reflected, reflectance );
+    return new ObjectData( d, color.clone(), reflected, reflectance );
   }
 
 

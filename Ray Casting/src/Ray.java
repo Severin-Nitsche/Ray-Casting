@@ -6,8 +6,15 @@ public class Ray {
   private double position[];
   private double direction[];
   private ThreeDObject[] objects;
+  private Light[] lights;
   private ThreeDPlane screen;
   private int reflections = 1;
+
+  public Ray(double x, double y, double z, double direction1, double direction2, ThreeDPlane screen, int reflections, Light[] lights, ThreeDObject ... objects) {
+    this( x, y, z, direction1, direction2, screen, objects);
+    this.reflections = reflections;
+    this.lights = lights;
+  }
 
   public Ray(double x, double y, double z, double direction1, double direction2, ThreeDPlane screen, int reflections, ThreeDObject ... objects) {
     this( x, y, z, direction1, direction2, screen, objects);
@@ -38,9 +45,24 @@ public class Ray {
         ObjectData temporaryData = object.data(check);
         if (temporaryData.distance < record && temporaryData.distance > 0) {
           record        = temporaryData.distance;
-          colors  [ r ] = temporaryData.color;
-          strength[ r ] = temporaryData.reflectance;
-          champ         = temporaryData.clone();
+          boolean lit = false;
+          for(Light light : lights) {
+            double[] point = Util.add( position, Util.multiply( Util.toCartesian(direction), temporaryData.distance ) );
+            if(light.isLit(point)) {
+              lit = true;
+              break;
+            }
+          }
+          //System.out.println(lit);
+          if (lit) {
+            colors  [ r ] = temporaryData.color;
+            strength[ r ] = temporaryData.reflectance;
+            champ         = temporaryData.clone();
+          } else {
+            colors  [ r ] = null;
+            strength[ r ] = 0;
+            champ         = null;
+          }
         }
       }
       check = champ.reflection;

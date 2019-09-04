@@ -6,9 +6,18 @@ public class Main {
   public static void main(String[] args) {
     Color       red              = new Color       ( (byte) 255, (byte) 0, (byte) 0 );
     Color       green            = new Color       ( (byte)   0, (byte) 255, (byte) 0 );
+    Color       blue             = new Color       ( (byte)   0, (byte) 0, (byte) 255 );
     //ThreeDPlane screen           = new ThreeDPlane (          0,        0,        1,          0,      0,          red,          0 );
     Sphere      sphere           = new Sphere      (         .5,        1,        3,         1,     red,           .1 );
     Sphere      sphere2          = new Sphere      (          0,        0,        2,         .5,  green,           .8 );
+    ThreeDPlane bottom           = new ThreeDPlane (          0,       -5,        0,    Math.PI/2,Math.PI/2,         blue,               0);
+    Light       light            = new Light() {};
+    double[] d = {0,4,0};
+    light.position = d;
+    ThreeDObject[] o = {sphere, sphere2, bottom};
+    light.objects = o;
+    Light[] lights = {light};
+    //System.exit(0);
     //Ray         ray              = new Ray         (          0,        0,        0,          0,      0,       screen, 2,     sphere2 );
     //Viewer      viewer           = new Viewer      (          3,        3,      100,     screen, sphere );
     //Screen      testScreen       = new Screen      (          0,        0,        1,          0,      0, Math.PI / 2d,          0 );
@@ -16,13 +25,13 @@ public class Main {
     //Viewer      secondTestViewer = new Viewer      (          0,        0,        0,          3,      3,          100, testScreen, sphere );
     double[]    frontDirection   = {            0, 0 };
     double[]    leftDirection    = { Math.PI / 2d, 0 };
-    Viewer      thirdTestViewer  = new Viewer      (          0,          0,        0,          3,      3,         200, frontDirection, leftDirection, 1, 2, sphere, sphere2 );
+    Viewer      thirdTestViewer  = new Viewer      (          0,          0,        0,          3,      3,         200, frontDirection, leftDirection, 1, 2, lights, sphere, sphere2, bottom );
 
 
     //viewer.printColor();
     //testViewer.printColor();
     //secondTestViewer.printColor();
-    thirdTestViewer.printColor();
+    //thirdTestViewer.printColor();
 
     JFrame        frame  = new JFrame( "Ray Casting" );
     BufferedImage image  = new BufferedImage( 600, 600, BufferedImage.TYPE_3BYTE_BGR );
@@ -31,14 +40,6 @@ public class Main {
     frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     frame.setVisible( true );
     frame.setSize( 600, 610 );
-
-    Light light = new Light() {};
-    light.objects = new ThreeDObject[1];
-    light.objects[0] = sphere2;
-    double[] test = {0,0,1.5};
-    double[] test2 = {0,0,0};
-    light.position = test2;
-    System.out.println(light.isLit(test));
 
   }
 

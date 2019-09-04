@@ -1,11 +1,7 @@
-public abstract class Light implements ThreeDObject {
+public abstract class Light {
 
   public double[]       position = null;
   public ThreeDObject[] objects  = null;
-
-  public ObjectData data(Ray ray) {
-    return null;
-  }
 
   public boolean isLit(double[] pos) {
     if (position        == null ) throw new IllegalStateException("Position has to be not null");
@@ -26,8 +22,8 @@ public abstract class Light implements ThreeDObject {
         record = temporaryData.distance;
       }
     }
-    System.out.println(dir[2]);
-    System.out.println(record);
+    //System.out.println(dir[2]);
+    //System.out.println(record);
     return Math.abs(record-dir[2])<.2 || dir[2]<=record;
   }
 
