@@ -164,4 +164,8 @@ public class Viewer {
     }
   }
 
+  public void inspect(int x, int y) {
+    rays[x][y].inspect();
+  }
+
 }

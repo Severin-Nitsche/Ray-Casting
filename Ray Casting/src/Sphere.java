@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Sphere implements ThreeDObject {
 
   Color color;
@@ -44,9 +46,22 @@ public class Sphere implements ThreeDObject {
 
     double[] reflection = Util.sub( rejection, projection );
              reflection = Util.toSpherical( reflection );
-    Ray      reflected  = new Ray( p0[ 0 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 0 ], p0[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], p0[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
+    Ray      reflected  = new Ray( p0[ 0 ] + ( d2 >= 0 && d2 < d1 ? d2 : d1 ) * l0[ 0 ], p0[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], p0[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
 
     return new ObjectData( d2 >= 0 && d2 < d1 ? d2 : d1, color.clone(), reflected, reflectance );
- }
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if(o instanceof Sphere) {
+      return ((Sphere)o).color.equals(color) && ((Sphere)o).reflectance == reflectance && ((Sphere)o).radius == radius && ((Sphere)o).center.equals(center);
+    }
+    return false;
+  }
+
+  @Override
+  public String toString() {
+    return "ref: "+reflectance+"\ncol: "+color+"\nrad: "+radius+"\ncen: "+center;
+  }
 
 }

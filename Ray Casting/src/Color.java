@@ -49,6 +49,10 @@ public class Color {
     return this;
   }
 
+  public static Color black() {
+    return new Color(0);
+  }
+
   @Override
   public String toString() {
     return ""+rgb;
@@ -57,6 +61,14 @@ public class Color {
   @Override
   public Color clone() {
     return new Color(rgb);
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if(o instanceof Color) {
+      return ((Color)o).rgb == rgb;
+    }
+    return false;
   }
 
 }

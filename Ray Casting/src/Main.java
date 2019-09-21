@@ -1,7 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.*;
+import java.awt.event.*;
+import java.awt.Point;
 public class Main {
+
+//inspect 420 | 266
 
   public static void main(String[] args) {
     Color       red              = new Color       ( (byte) 255, (byte) 0, (byte) 0 );
@@ -25,7 +29,7 @@ public class Main {
     //Viewer      secondTestViewer = new Viewer      (          0,        0,        0,          3,      3,          100, testScreen, sphere );
     double[]    frontDirection   = {            0, 0 };
     double[]    leftDirection    = { Math.PI / 2d, 0 };
-    Viewer      thirdTestViewer  = new Viewer      (          0,          0,        0,          3,      3,         200, frontDirection, leftDirection, 1, 2, lights, sphere, sphere2, bottom );
+    Viewer      thirdTestViewer  = new Viewer      (          0,          0,        0,          3,      3,         200, frontDirection, leftDirection, 1, 7, lights, sphere, sphere2, bottom );
 
 
     //viewer.printColor();
@@ -40,6 +44,28 @@ public class Main {
     frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     frame.setVisible( true );
     frame.setSize( 600, 610 );
+    frame.addMouseListener(new MouseListener() {
+      @Override
+      public void mouseEntered(MouseEvent e) {
+
+      }
+      @Override
+      public void mouseExited(MouseEvent e) {
+
+      }
+      @Override
+      public void mousePressed(MouseEvent e) {
+
+      }
+      @Override
+      public void mouseReleased(MouseEvent e) {
+
+      }
+      @Override
+      public void mouseClicked(MouseEvent e) {
+        thirdTestViewer.inspect((int)e.getPoint().getX(),(int)e.getPoint().getY());
+      }
+    });
 
   }
 

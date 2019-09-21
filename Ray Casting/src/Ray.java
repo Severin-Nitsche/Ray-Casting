@@ -29,20 +29,22 @@ public class Ray {
     this.direction     = new double[2];
     this.direction[0]  = direction1;
     this.direction[1]  = direction2;
-    this.objects       = objects.clone();
+    this.objects       = objects;
     this.screen        = screen;
   }
 
-  public Color getColor() {
-
+  public void inspect() {
+    System.out.println("-------inspection--------");
     Ray      check    = this;
     Color[]  colors   = new Color[ reflections ];
     double[] strength = new double[ reflections ];
     ObjectData champ = null;
     for( int r = 0; r < reflections; r++ ) {
+      System.out.println("--Check:\n"+check+"\n");
       double record     = Double.POSITIVE_INFINITY;
       for (ThreeDObject object : objects) {
         ObjectData temporaryData = object.data(check);
+        System.out.println("---dist: "+temporaryData.distance);
         if (temporaryData.distance < record && temporaryData.distance > 0) {
           record        = temporaryData.distance;
           boolean lit = false;
@@ -57,12 +59,58 @@ public class Ray {
           if (lit) {
             colors  [ r ] = temporaryData.color;
             strength[ r ] = temporaryData.reflectance;
-            champ         = temporaryData.clone();
           } else {
             colors  [ r ] = null;
             strength[ r ] = 0;
-            champ         = null;
           }
+          champ         = temporaryData.clone();
+        }
+      }
+      for(int b=0; b<r; b++) {
+        System.out.print("\t");
+      }
+      System.out.println("hit after: "+record+"color: "+colors[ r ]);
+      check = champ.reflection;
+    }
+    System.out.println("\t-----Color------");
+    Color  color      = null;
+    for( int r = reflections - 1; r >= 0; r-- ) {
+      if (color == null) color = colors[ r ];
+      else color.overlay(colors[r], strength[ r ]);
+      System.out.println("\t\tColor: "+color);
+    }
+    System.out.println("final Color: "+color);
+  }
+
+  public Color getColor() {
+
+    Ray      check    = this;
+    Color[]  colors   = new Color[ reflections ];
+    double[] strength = new double[ reflections ];
+    ObjectData champ = null;
+    for( int r = 0; r < reflections; r++ ) {
+      double record     = Double.POSITIVE_INFINITY;
+      for (ThreeDObject object : objects) {
+        ObjectData temporaryData = object.data(check);
+        if (temporaryData.distance < record && temporaryData.distance > 0.0001) {
+          record        = temporaryData.distance;
+          boolean lit = false;
+          for(Light light : lights) {
+            double[] point = Util.add( position, Util.multiply( Util.toCartesian(direction), temporaryData.distance ) );
+            if(light.isLit(point)) {
+              lit = true;
+              break;
+            }
+          }
+          //System.out.println(lit);
+          if (lit) {
+            colors  [ r ] = temporaryData.color;
+            strength[ r ] = temporaryData.reflectance;
+          } else {
+            colors  [ r ] = Color.black();
+            strength[ r ] = 1;
+          }
+          champ         = temporaryData.clone();
         }
       }
       check = champ.reflection;
@@ -72,6 +120,7 @@ public class Ray {
     for( int r = reflections - 1; r >= 0; r-- ) {
       if (color == null) color = colors[ r ];
       else color.overlay(colors[r], strength[ r ]);
+      //if (colors[r] != null) return colors[r];
     }
     return color;
   }
