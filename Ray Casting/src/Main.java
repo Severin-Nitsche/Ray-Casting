@@ -13,10 +13,10 @@ public class Main {
     Color       blue             = new Color       ( (byte)   0, (byte) 0, (byte) 255 );
     //ThreeDPlane screen           = new ThreeDPlane (          0,        0,        1,          0,      0,          red,          0 );
     Sphere      sphere           = new Sphere      (         .5,        1,        3,         1,     red,           .1 );
-    Sphere      sphere2          = new Sphere      (          0,        0,        2,         .5,  green,           .8 );
+    Sphere      sphere2          = new Sphere      (          0,        2,        2,         .5,  green,           .8 );
     ThreeDPlane bottom           = new ThreeDPlane (          0,       0,        0,    Math.PI/2,Math.PI/2,         blue,               0);
     Light       light            = new Light() {};
-    double[] d = {0,10,-2};
+    double[] d = {0,.1,0};
     light.position = d;
     ThreeDObject[] o = {bottom, sphere, sphere2};
     light.objects = o;

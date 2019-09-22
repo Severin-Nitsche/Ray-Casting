@@ -58,8 +58,9 @@ public abstract class Light {
       }
     }
     double ret = Util.dot( normal, rev );
-    ret = ret + 1;
-    ret = ret / 2d; //+1  /2
+    //ret = ret + 1;
+    //ret = ret / 2d; //+1  /2
+    ret = Util.clamp( ret, 0, 1 );
     if (!(Math.abs(record-dir[2])<SURFACE_DISTANCE || dir[2]<=record)) ret *= ZERO;
     //System.out.println(dir[2]);
     //System.out.println(record);
