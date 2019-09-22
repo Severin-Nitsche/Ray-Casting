@@ -1,5 +1,7 @@
 public class ThreeDPlane implements ThreeDObject {
 
+  public static double ZERO = .001;
+
   protected Color color;
   protected double reflectance;
   protected double localUp[];
@@ -58,6 +60,7 @@ public class ThreeDPlane implements ThreeDObject {
   * <p><i>d</i> -&gt; scalar</p>
   *
   */
+  @Override
   public ObjectData data(Ray ray) {
     double[] p0         = { localUp[ 0 ], localUp[ 1 ], localUp[ 2 ] };
     double[] temp       = ray.get();
@@ -77,6 +80,17 @@ public class ThreeDPlane implements ThreeDObject {
     //x: ray.x + d * l.x, y: ...
     Ray      reflected  = new Ray( temp[ 0 ] + d * l[ 0 ], temp[ 1 ] + d * l[ 1 ], temp[ 2 ] + d * l[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
     return new ObjectData( d, color.clone(), reflected, reflectance );
+  }
+
+  @Override
+  public double[] getNormalAt(double...pos) {
+    double[] ret = {localUp[3],localUp[4]};
+    ret = Util.toCartesian(ret);
+    double[] center = {localUp[0],localUp[1],localUp[2]};
+    double[] p = Util.sub( pos, center );
+    double d = Util.dot(ret, p);
+    if(d > ZERO) throw new IllegalArgumentException("Point is not on plane");
+    return ret;
   }
 
 

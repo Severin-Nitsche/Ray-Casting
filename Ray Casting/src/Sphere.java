@@ -2,6 +2,8 @@ import java.util.*;
 
 public class Sphere implements ThreeDObject {
 
+  public static final double SURFACE_DISTANCE = .0001;
+
   Color color;
   double reflectance;
 
@@ -49,6 +51,15 @@ public class Sphere implements ThreeDObject {
     Ray      reflected  = new Ray( p0[ 0 ] + ( d2 >= 0 && d2 < d1 ? d2 : d1 ) * l0[ 0 ], p0[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], p0[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
 
     return new ObjectData( d2 >= 0 && d2 < d1 ? d2 : d1, color.clone(), reflected, reflectance );
+  }
+
+  @Override
+  public double[] getNormalAt(double...pos) {
+    if(pos.length != 3) throw new IllegalArgumentException("Three and only three dimensions are required");
+    double[] normal = Util.sub( pos, center );
+    if(Math.abs( Util.magnitude(normal) - radius ) > SURFACE_DISTANCE) throw new IllegalArgumentException("Point is not on Sphere");
+    normal = Util.normalize( normal );
+    return normal;
   }
 
   @Override

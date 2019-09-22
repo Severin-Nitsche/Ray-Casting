@@ -49,6 +49,11 @@ public class Color {
     return this;
   }
 
+  public void mult(double d) {
+    if(0>d||d>1) throw new IllegalArgumentException("Argument out of range: expected value between 0 and 1");
+    setRGB((byte)(get(RED) * d),(byte)(get(GREEN) * d),(byte)(get(BLUE) * d));
+  }
+
   public static Color black() {
     return new Color(0);
   }

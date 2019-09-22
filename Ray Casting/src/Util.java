@@ -89,6 +89,14 @@ public class Util {
         return returnValue;
       }
 
+      public static double[] divide(double[] a, double b) {
+        double[] returnValue = a.clone();
+        for (int index = 0; index < a.length; index++ ) {
+          returnValue[ index ] /= b;
+        }
+        return returnValue;
+      }
+
       /**
       *
       * @return the projection of a onto b
@@ -124,6 +132,26 @@ public class Util {
         }
         result = Math.sqrt( result );
         return result;
+      }
+
+      public static double[] normalize(double[] a) {
+        return divide( a, magnitude(a) );
+      }
+
+      public static double map(double value, double min, double max, double nmin, double nmax) {
+        double elevated = value - min;
+        double elevatedMax = max - min;
+        double p = elevated / elevatedMax;
+        double nelevatedmax = max - nmin;
+        double nelevated = nelevatedmax * p;
+        double n = nelevated + min;
+        return n;
+      }
+
+      public static double clamp(double value, double min, double max) {
+        if(value<min) return min;
+        if(value>max) return max;
+        return value;
       }
 
       public static String vecToString(double[] a) {

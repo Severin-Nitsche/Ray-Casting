@@ -1,5 +1,8 @@
 public class Ray {
 
+  public static final double ZERO = .01;
+  public static final double SURFACE_DISTANCE = .0001;
+
   public static final int X = 0;
   public static final int Y = 1;
   public static final int Z = 2;
@@ -35,51 +38,24 @@ public class Ray {
 
   public void inspect() {
     System.out.println("-------inspection--------");
-    Ray      check    = this;
-    Color[]  colors   = new Color[ reflections ];
-    double[] strength = new double[ reflections ];
-    ObjectData champ = null;
-    for( int r = 0; r < reflections; r++ ) {
-      System.out.println("--Check:\n"+check+"\n");
-      double record     = Double.POSITIVE_INFINITY;
-      for (ThreeDObject object : objects) {
-        ObjectData temporaryData = object.data(check);
-        System.out.println("---dist: "+temporaryData.distance);
-        if (temporaryData.distance < record && temporaryData.distance > 0) {
-          record        = temporaryData.distance;
-          boolean lit = false;
-          for(Light light : lights) {
-            double[] point = Util.add( position, Util.multiply( Util.toCartesian(direction), temporaryData.distance ) );
-            if(light.isLit(point)) {
-              lit = true;
-              break;
-            }
-          }
-          //System.out.println(lit);
-          if (lit) {
-            colors  [ r ] = temporaryData.color;
-            strength[ r ] = temporaryData.reflectance;
-          } else {
-            colors  [ r ] = null;
-            strength[ r ] = 0;
-          }
-          champ         = temporaryData.clone();
+    double record = Double.POSITIVE_INFINITY;
+    for (ThreeDObject object : objects) {
+      ObjectData temporaryData = object.data(this);
+      if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
+        record        = temporaryData.distance;
+        //boolean lit = false;
+        double lightLevel = 0;
+        System.out.println("---lights---");
+        for(Light light : lights) {
+          double[] point = Util.add( position, Util.multiply( Util.toCartesian(direction), temporaryData.distance ) );
+          lightLevel += light.hasLightLevel(point);
+          System.out.println(lightLevel);
         }
+        System.out.println("---final---");
+        lightLevel = Util.clamp( lightLevel, 0, 1);
+        System.out.println(lightLevel);
       }
-      for(int b=0; b<r; b++) {
-        System.out.print("\t");
-      }
-      System.out.println("hit after: "+record+"color: "+colors[ r ]);
-      check = champ.reflection;
     }
-    System.out.println("\t-----Color------");
-    Color  color      = null;
-    for( int r = reflections - 1; r >= 0; r-- ) {
-      if (color == null) color = colors[ r ];
-      else color.overlay(colors[r], strength[ r ]);
-      System.out.println("\t\tColor: "+color);
-    }
-    System.out.println("final Color: "+color);
   }
 
   public Color getColor() {
@@ -92,24 +68,21 @@ public class Ray {
       double record     = Double.POSITIVE_INFINITY;
       for (ThreeDObject object : objects) {
         ObjectData temporaryData = object.data(check);
-        if (temporaryData.distance < record && temporaryData.distance > 0.0001) {
+        if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
           record        = temporaryData.distance;
-          boolean lit = false;
+          //boolean lit = false;
+          double lightLevel = 0;
           for(Light light : lights) {
             double[] point = Util.add( position, Util.multiply( Util.toCartesian(direction), temporaryData.distance ) );
-            if(light.isLit(point)) {
-              lit = true;
-              break;
-            }
+            lightLevel += light.hasLightLevel(point);
           }
           //System.out.println(lit);
-          if (lit) {
-            colors  [ r ] = temporaryData.color;
-            strength[ r ] = temporaryData.reflectance;
-          } else {
-            colors  [ r ] = Color.black();
-            strength[ r ] = 1;
-          }
+          lightLevel = Util.clamp( lightLevel, 0, 1);
+
+          colors  [ r ] = temporaryData.color;
+          colors  [ r ].mult(lightLevel);
+          strength[ r ] = temporaryData.reflectance;
+          //if(lightLevel <= ZERO) strength[ r ] = 1;
           champ         = temporaryData.clone();
         }
       }
