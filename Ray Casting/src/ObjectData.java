@@ -24,7 +24,7 @@ public class ObjectData {
 
   @Override
   public ObjectData clone() {
-    return new ObjectData(distance, color, reflection, reflectance);
+    return new ObjectData(distance, color.clone(), reflection, reflectance);
   }
 
   @Override

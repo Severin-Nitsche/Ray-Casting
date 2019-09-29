@@ -16,7 +16,7 @@ public class Main {
     Sphere      sphere2          = new Sphere      (          0,        2,        2,         .5,  green,           .8 );
     ThreeDPlane bottom           = new ThreeDPlane (          0,       0,        0,    Math.PI/2,Math.PI/2,         blue,               0);
     Light       light            = new Light() {};
-    double[] d = {0,.1,0};
+    double[] d = {0,10,-15};
     light.position = d;
     ThreeDObject[] o = {bottom, sphere, sphere2};
     light.objects = o;
@@ -29,7 +29,7 @@ public class Main {
     //Viewer      secondTestViewer = new Viewer      (          0,        0,        0,          3,      3,          100, testScreen, sphere );
     double[]    frontDirection   = {            0, 0 };
     double[]    leftDirection    = { Math.PI / 2d, 0 };
-    Viewer      thirdTestViewer  = new Viewer      (          0,          3,        -5,          3,      3,         200, frontDirection, leftDirection, 1, 1, lights, bottom, sphere2, sphere );
+    Viewer      thirdTestViewer  = new Viewer      (          0,          3,        -5,          3,      3,         200, frontDirection, leftDirection, 1, 7, lights, bottom, sphere2, sphere );
 
 
     //viewer.printColor();

@@ -137,6 +137,7 @@ public class Viewer {
           colors[ y * rays.length + x ] = rays[ x ][ y ].getColor().getRGB();
         } catch(java.lang.NullPointerException e) {
           colors[ y * rays.length + x ] = 0;
+          //e.printStackTrace();
         }
 
       }
