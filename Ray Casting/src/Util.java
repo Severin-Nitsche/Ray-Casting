@@ -142,9 +142,9 @@ public class Util {
         double elevated = value - min;
         double elevatedMax = max - min;
         double p = elevated / elevatedMax;
-        double nelevatedmax = max - nmin;
+        double nelevatedmax = nmax - nmin;
         double nelevated = nelevatedmax * p;
-        double n = nelevated + min;
+        double n = nelevated + nmin;
         return n;
       }
 

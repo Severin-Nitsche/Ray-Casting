@@ -137,7 +137,7 @@ public class Ray {
     for( int r = reflections - 1; r >= 0; r-- ) {
       if(colors[ r ] != null) {
         colors[ r ].mult( lightLevels[ r ] );
-        //strength[ r ] = Util.clamp( strength[ r ] / lightLevels[ r ], 0, 1 );
+        strength   [ r ] *= Util.map( lightLevels[ r ], 0, 1, strength[ r ], 1 );
         if (color == null) color = colors[ r ];
         else color.overlay(colors[r], strength[ r ]);
       }
