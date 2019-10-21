@@ -8,13 +8,13 @@ public class Main {
 //inspect 420 | 266
 
   public static void main(String[] args) {
-    Color       red              = new Color       ( (byte) 255, (byte) 0, (byte) 0 );
-    Color       green            = new Color       ( (byte)   0, (byte) 255, (byte) 0 );
-    Color       blue             = new Color       ( (byte)   0, (byte) 0, (byte) 255 );
+    Color       red              = new Color       ( (byte) 255, (byte) 0, (byte) 98 );
+    Color       green            = new Color       ( (byte) 149, (byte) 255, (byte) 0 );
+    Color       blue             = new Color       ( (byte) 10, (byte) 100, (byte) 255 );
     //ThreeDPlane screen           = new ThreeDPlane (          0,        0,        1,          0,      0,          red,          0 );
-    Sphere      sphere           = new Sphere      (         .5,        1,        3,         1,     red,           .1 );
-    Sphere      sphere2          = new Sphere      (          0,        2,        2,         .5,  green,           .8 );
-    ThreeDPlane bottom           = new ThreeDPlane (          0,       0,        0,    Math.PI/2,Math.PI/2,         blue,               0);
+    Sphere      sphere           = new Sphere      (         .5,        1,        3,         1,     red,           .1, true );
+    Sphere      sphere2          = new Sphere      (          0,        2,        2,         .5,  green,           .8, true );
+    ThreeDPlane bottom           = new ThreeDPlane (          0,       0,        0,    Math.PI/2,Math.PI/2,         blue,               0, true);
     Light       light            = new Light() {};
     double[] d = {0,10,-15};
     light.position = d;
@@ -29,7 +29,7 @@ public class Main {
     //Viewer      secondTestViewer = new Viewer      (          0,        0,        0,          3,      3,          100, testScreen, sphere );
     double[]    frontDirection   = {            0, 0 };
     double[]    leftDirection    = { Math.PI / 2d, 0 };
-    Viewer      thirdTestViewer  = new Viewer      (          0,          3,        -5,          3,      3,         200, frontDirection, leftDirection, 1, 7, lights, bottom, sphere2, sphere );
+    Viewer      thirdTestViewer  = new Viewer      (          0,          3,        -5,          3,      3,         200, frontDirection, leftDirection, 1, 70, lights, bottom, sphere2, sphere );
 
 
     //viewer.printColor();

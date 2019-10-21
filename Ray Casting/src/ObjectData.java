@@ -1,8 +1,9 @@
 public class ObjectData {
-  public double distance;
-  public Color  color;
-  public Ray    reflection;
-  public double reflectance;
+  public double  distance;
+  public Color   color;
+  public boolean colorTrue;
+  public Ray     reflection;
+  public double  reflectance;
 
   public ObjectData(double distance, Color color) {
     this.distance = distance;
@@ -20,6 +21,14 @@ public class ObjectData {
     this.color       = color;
     this.reflection  = reflection;
     this.reflectance = reflectance;
+  }
+
+  public ObjectData(double distance, Color color, Ray reflection, double reflectance, boolean colorTrue) {
+    this.distance    = distance;
+    this.color       = color;
+    this.reflection  = reflection;
+    this.reflectance = reflectance;
+    this.colorTrue   = colorTrue;
   }
 
   @Override

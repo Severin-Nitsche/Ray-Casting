@@ -148,6 +148,14 @@ public class Util {
         return n;
       }
 
+      public static byte min(byte a, byte b) {
+        return a<b?a:b;
+      }
+
+      public static int min(int a, int b) {
+        return a<b?a:b;
+      }
+
       public static double clamp(double value, double min, double max) {
         if(value<min) return min;
         if(value>max) return max;

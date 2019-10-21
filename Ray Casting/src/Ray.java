@@ -100,10 +100,11 @@ public class Ray {
 
   public Color getColor() {
 
-    Ray      check       = this;
-    Color[]  colors      = new Color [ reflections ];
-    double[] lightLevels = new double[ reflections ];
-    double[] strength    = new double[ reflections ];
+    Ray       check       = this;
+    Color[]   colors      = new Color  [ reflections ];
+    double[]  lightLevels = new double [ reflections ];
+    double[]  strength    = new double [ reflections ];
+    boolean[] colorTrue   = new boolean[ reflections ];
     for( int r = 0; r < reflections; r++ ) {
       double record     = Double.POSITIVE_INFINITY;
       ObjectData champ     = null;
@@ -122,6 +123,7 @@ public class Ray {
           colors     [ r ] = temporaryData.color.clone();
           lightLevels[ r ] = lightLevel;
           strength   [ r ] = temporaryData.reflectance;
+          colorTrue  [ r ] = temporaryData.colorTrue;
           //if(lightLevel <= ZERO) strength[ r ] = 1;
           champ            = temporaryData.clone();
         }
@@ -139,6 +141,7 @@ public class Ray {
         colors[ r ].mult( lightLevels[ r ] );
         strength   [ r ] *= Util.map( lightLevels[ r ], 0, 1, strength[ r ], 1 );
         if (color == null) color = colors[ r ];
+        else if(colorTrue[ r ]) color.overlay(colors[r], strength[ r ]).limit(colors[r]);
         else color.overlay(colors[r], strength[ r ]);
       }
       //if (colors[r] != null) return colors[r];

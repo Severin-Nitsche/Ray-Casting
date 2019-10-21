@@ -2,6 +2,8 @@ public class ThreeDPlane implements ThreeDObject {
 
   public static double ZERO = .001;
 
+  protected boolean colorTrue;
+
   protected Color color;
   protected double reflectance;
   protected double localUp[];
@@ -20,7 +22,7 @@ public class ThreeDPlane implements ThreeDObject {
   * @param color - The color of the plane
   *
   */
-  public ThreeDPlane(double x, double y, double z, double direction1, double direction2, Color color, double reflectance) {
+  public ThreeDPlane(double x, double y, double z, double direction1, double direction2, Color color, double reflectance, boolean colorTrue) {
     localUp          = new double[ 5 ];
     localUp[ 0 ]     = x;
     localUp[ 1 ]     = y;
@@ -29,6 +31,7 @@ public class ThreeDPlane implements ThreeDObject {
     localUp[ 4 ]     = direction2;
     this.color       = color;
     this.reflectance = reflectance;
+    this.colorTrue   = colorTrue;
   }
 
   public double[] get() {
@@ -79,7 +82,7 @@ public class ThreeDPlane implements ThreeDObject {
     double[] reflection = Util.toSpherical( Util.sub( rejection, projection ) );
     //x: ray.x + d * l.x, y: ...
     Ray      reflected  = new Ray( temp[ 0 ] + d * l[ 0 ], temp[ 1 ] + d * l[ 1 ], temp[ 2 ] + d * l[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
-    return new ObjectData( d, color.clone(), reflected, reflectance );
+    return new ObjectData( d, color.clone(), reflected, reflectance, colorTrue );
   }
 
   @Override
@@ -91,6 +94,11 @@ public class ThreeDPlane implements ThreeDObject {
     double d = Util.dot(ret, p);
     if(d > ZERO) throw new IllegalArgumentException("Point is not on plane");
     return ret;
+  }
+
+  @Override
+  public boolean isColorTrue() {
+    return colorTrue;
   }
 
 

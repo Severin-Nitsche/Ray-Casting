@@ -4,13 +4,15 @@ public class Sphere implements ThreeDObject {
 
   public static final double SURFACE_DISTANCE = .0001;
 
-  Color color;
-  double reflectance;
+  protected Color color;
+  protected double reflectance;
 
-  double radius;
-  double[] center;
+  protected boolean colorTrue;
 
-  public Sphere( double x, double y, double z, double radius, Color color, double reflectance ) {
+  protected double radius;
+  protected double[] center;
+
+  public Sphere( double x, double y, double z, double radius, Color color, double reflectance, boolean colorTrue ) {
     if(reflectance > 1 || reflectance < 0) throw new IllegalArgumentException("reflectance needs to be in range 1 (0% reflectance) to 0 (100% reflectance)");
     this.color       = color;
     this.reflectance = reflectance;
@@ -21,6 +23,8 @@ public class Sphere implements ThreeDObject {
     this.center[0]   = x;
     this.center[1]   = y;
     this.center[2]   = z;
+
+    this.colorTrue   = colorTrue;
   }
 
   public ObjectData data(Ray ray) {
@@ -50,7 +54,7 @@ public class Sphere implements ThreeDObject {
              reflection = Util.toSpherical( reflection );
     Ray      reflected  = new Ray( p0[ 0 ] + ( d2 >= 0 && d2 < d1 ? d2 : d1 ) * l0[ 0 ], p0[ 1 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 1 ], p0[ 2 ] + ( d2 >= 0 ? d2 : d1 ) * l0[ 2 ], reflection[ 0 ], reflection[ 1 ], ray.getScreen(), ray.getObjects() );
 
-    return new ObjectData( d2 >= 0 && d2 < d1 ? d2 : d1, color.clone(), reflected, reflectance );
+    return new ObjectData( d2 >= 0 && d2 < d1 ? d2 : d1, color.clone(), reflected, reflectance, colorTrue );
   }
 
   @Override
@@ -60,6 +64,11 @@ public class Sphere implements ThreeDObject {
     if(Math.abs( Util.magnitude(normal) - radius ) > SURFACE_DISTANCE) throw new IllegalArgumentException("Point is not on Sphere");
     normal = Util.normalize( normal );
     return normal;
+  }
+
+  @Override
+  public boolean isColorTrue() {
+    return colorTrue;
   }
 
   @Override
