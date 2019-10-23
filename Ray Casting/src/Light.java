@@ -40,7 +40,7 @@ public abstract class Light {
     if (objects.length  == 0    ) return 1;
 
     double[] dir    = {pos[0] - position[0], pos[1] - position[1], pos[2] - position[2]};
-    double[] rev    = {position[0] - pos[0], position[1] - pos[1], position[2] - pos[1]};
+    double[] rev    = {position[0] - pos[0], position[1] - pos[1], position[2] - pos[2]};
     rev             = Util.normalize(rev);
     double[] normal = null;
     dir             = Util.toSpherical(dir);
@@ -53,6 +53,7 @@ public abstract class Light {
       } catch(IllegalArgumentException e) {
       }
       ObjectData temporaryData = object.data(check);
+      if(temporaryData==null) continue;
       if (temporaryData.distance < record && temporaryData.distance > 0) {
         record = temporaryData.distance;
       }

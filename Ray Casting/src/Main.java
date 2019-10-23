@@ -14,7 +14,7 @@ public class Main {
     Color green = new Color((byte)149, (byte)255, (byte)0);
     Color blue = new Color((byte)10, (byte)100, (byte)255);
 
-    Sphere sphere = new Sphere(.5, 1, 3, 1, red, .1, true);
+    Sphere sphere = new Sphere(.5, 3, 3, 1, red, .1, true);
     Sphere sphere2 = new Sphere(0, 2, 2, .5, green, .8, true);
     ThreeDPlane bottom = new ThreeDPlane(0, 0, 0, Math.PI/2, Math.PI/2, blue, 0, true);
     Light light = new Light() {};
@@ -26,7 +26,7 @@ public class Main {
 
     double[] frontDirection = {0, 0};
     double[] leftDirection = {Math.PI / 2d, 0};
-    Viewer thirdTestViewer = new Viewer( 0, 3, -5, 3, 3, 200, frontDirection, leftDirection, 1, 70, lights, bottom, sphere2, sphere);
+    Viewer thirdTestViewer = new Viewer( 0, 3, -5, 3, 3, 200, frontDirection, leftDirection, 1, 1, lights, bottom, sphere2, sphere);
 
     JFrame frame = new JFrame("Ray Casting");
     BufferedImage image = new BufferedImage(600, 600, BufferedImage.TYPE_3BYTE_BGR);

@@ -44,13 +44,16 @@ public class Ray {
     double[] strength    = new double[ reflections ];
     for( int r = 0; r < reflections; r++ ) {
       System.out.println("Reflection #"+(r+1));
-      System.out.println("check:");
-      System.out.println(check);
       ObjectData champ     = null;
       double record     = Double.POSITIVE_INFINITY;
       for (ThreeDObject object : objects) {
+        System.out.println(object);
         ObjectData temporaryData = object.data(check);
-        System.out.println("IF:");
+        System.out.println(object);
+        System.out.println(temporaryData);
+        if(temporaryData==null) continue;
+        System.out.println(record);
+        System.out.println(temporaryData.distance < record);
         if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
           record        = temporaryData.distance;
           //boolean lit = false;
@@ -68,14 +71,14 @@ public class Ray {
           champ            = temporaryData.clone();
         }
       }
-      System.out.println("Color:");
+      /*System.out.println("Color:");
       System.out.println(colors[r]);
       System.out.println("Light:");
       System.out.println(lightLevels[r]);
       System.out.println("strength:");
       System.out.println(strength[r]);
       System.out.println("champ:");
-      System.out.println(champ);
+      System.out.println(champ);*/
       try {
         check = champ.reflection;
       } catch(Exception e) {
@@ -110,6 +113,7 @@ public class Ray {
       ObjectData champ     = null;
       for (ThreeDObject object : objects) {
         ObjectData temporaryData = object.data(check);
+        if(temporaryData==null) continue;
         if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
           record        = temporaryData.distance;
           //boolean lit = false;
