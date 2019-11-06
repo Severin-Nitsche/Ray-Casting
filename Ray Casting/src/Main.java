@@ -22,6 +22,7 @@ public class Main {
     light.position = d;
     ThreeDObject[] o = {bottom, sphere, sphere2};
     light.objects = o;
+    light.strength = 300;
     Light[] lights = {light};
 
     double[] frontDirection = {0, 0};
