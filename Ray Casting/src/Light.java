@@ -6,6 +6,7 @@ public abstract class Light {
   public double[]       position = null;
   public ThreeDObject[] objects  = null;
   public double strength;
+  public Color color;
 
   @Deprecated
   public boolean isLit(double[] pos) {

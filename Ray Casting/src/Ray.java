@@ -108,6 +108,7 @@ public class Ray {
     double[]  lightLevels = new double [ reflections ];
     double[]  strength    = new double [ reflections ];
     boolean[] colorTrue   = new boolean[ reflections ];
+    Color[]   lightColors = new Color  [ reflections ];
     for( int r = 0; r < reflections; r++ ) {
       double record     = Double.POSITIVE_INFINITY;
       ObjectData champ     = null;
@@ -118,12 +119,15 @@ public class Ray {
           record        = temporaryData.distance;
           //boolean lit = false;
           double lightLevel = 0;
+          Color  lightColor = new Color(0);
           for(Light light : lights) {
             double[] point = Util.add( check.position, Util.multiply( Util.toCartesian(check.direction), temporaryData.distance ) );
             lightLevel += light.hasLightLevel(point);
+            lightColor.add(light.color);
           }
           //System.out.println(lit);
           lightLevel = Util.clamp( lightLevel, 0, 1);
+          lightColors[ r ] = lightColor;
           colors     [ r ] = temporaryData.color.clone();
           lightLevels[ r ] = lightLevel;
           strength   [ r ] = temporaryData.reflectance;
@@ -142,6 +146,7 @@ public class Ray {
     Color  color      = null;
     for( int r = reflections - 1; r >= 0; r-- ) {
       if(colors[ r ] != null) {
+        colors[ r ].limit( lightColors[ r ] );
         colors[ r ].mult( lightLevels[ r ] );
         strength   [ r ] *= Util.map( lightLevels[ r ], 0, 1, strength[ r ], 1 );
         if (color == null) color = colors[ r ];

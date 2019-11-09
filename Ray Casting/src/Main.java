@@ -23,6 +23,7 @@ public class Main {
     ThreeDObject[] o = {bottom, sphere, sphere2};
     light.objects = o;
     light.strength = 300;
+    light.color = new Color(0xff0000);
     Light[] lights = {light};
 
     double[] frontDirection = {0, 0};

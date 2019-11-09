@@ -54,6 +54,18 @@ public class Color {
     setRGB((byte)(get(RED) * d),(byte)(get(GREEN) * d),(byte)(get(BLUE) * d));
   }
 
+  public Color add(Color c) {
+    int red    = get(RED);
+    int green  = get(GREEN);
+    int blue   = get(BLUE);
+
+    int cRed   = c.get(RED);
+    int cGreen = c.get(GREEN);
+    int cBlue  = c.get(BLUE);
+    setRGB((byte)(Util.clamp(red + cRed, 0, 255)),(byte)(Util.clamp(green + cGreen, 0, 255)),(byte)(Util.clamp(blue + cBlue, 0, 255)));
+    return this;
+  }
+
   public Color limit(Color c) {
     int red = Util.min(c.get(RED),get(RED));
     int green = Util.min(c.get(GREEN),get(GREEN));
