@@ -1,3 +1,7 @@
+package com.github.severinnitsche.utilities.visual;
+
+import com.github.severinnitsche.utilities.math.MathUtil;
+
 public class Color {
 
   public static final byte RED   = 16;
@@ -49,9 +53,10 @@ public class Color {
     return this;
   }
 
-  public void mult(double d) {
+  public Color mult(double d) {
     if(0>d||d>1) throw new IllegalArgumentException("Argument out of range: expected value between 0 and 1");
     setRGB((byte)(get(RED) * d),(byte)(get(GREEN) * d),(byte)(get(BLUE) * d));
+    return this;
   }
 
   public Color add(Color c) {
@@ -62,14 +67,14 @@ public class Color {
     int cRed   = c.get(RED);
     int cGreen = c.get(GREEN);
     int cBlue  = c.get(BLUE);
-    setRGB((byte)(Util.clamp(red + cRed, 0, 255)),(byte)(Util.clamp(green + cGreen, 0, 255)),(byte)(Util.clamp(blue + cBlue, 0, 255)));
+    setRGB((byte)(MathUtil.clamp(red + cRed, 0, 255)),(byte)(MathUtil.clamp(green + cGreen, 0, 255)),(byte)(MathUtil.clamp(blue + cBlue, 0, 255)));
     return this;
   }
 
   public Color limit(Color c) {
-    int red = Util.min(c.get(RED),get(RED));
-    int green = Util.min(c.get(GREEN),get(GREEN));
-    int blue = Util.min(c.get(BLUE),get(BLUE));
+    int red = MathUtil.min(c.get(RED),get(RED));
+    int green = MathUtil.min(c.get(GREEN),get(GREEN));
+    int blue = MathUtil.min(c.get(BLUE),get(BLUE));
 
     setRGB((byte)red,(byte)green,(byte)blue);
     return this;

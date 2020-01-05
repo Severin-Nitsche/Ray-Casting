@@ -1,0 +1,107 @@
+package com.github.severinnitsche.essentials.meta;
+
+import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
+import com.github.severinnitsche.essentials.meta.help.ObjectInformation;
+import com.github.severinnitsche.utilities.math.MathUtil;
+import com.github.severinnitsche.utilities.math.Point;
+import com.github.severinnitsche.utilities.math.Vector;
+import com.github.severinnitsche.utilities.visual.Color;
+
+public abstract class Light {
+
+  public static final double SURFACE_DISTANCE = .01;
+  public static final double ZERO             = .1;
+
+  public Point position = null;
+  public ThreeDObject[] objects  = null;
+  public double strength;
+  public Color color;
+
+  @Deprecated
+  public boolean isLit(Point pos) {
+    //Guard clauses
+    if (position == null) throw new IllegalStateException("Position has to be not null");
+    if (position.dimensions() != 3) throw new IllegalStateException("Position has to have 3 and only three indicies");
+    if (pos == null) throw new IllegalArgumentException("Pos(ition) has to be not null");
+    if (pos.dimensions() != 3) throw new IllegalArgumentException("Pos(ition) has to have 3 and only three indicies");
+    if (objects == null) throw new IllegalStateException("No objects defined");
+
+    //simple case
+    if (objects.length == 0) return true;
+
+    //Light -> Point
+    Vector dir = pos.subtract(position);
+
+    //find distance to closest object
+    Ray check = new Ray(position, dir);
+    double record = Double.POSITIVE_INFINITY;
+    for (ThreeDObject object : objects) {
+      ObjectInformation temporaryData = object.collide(check);
+      if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
+        record = temporaryData.distance;
+      }
+    }
+
+    return Math.abs(record*record - dir.squaredMagnitude())<SURFACE_DISTANCE || dir.squaredMagnitude()<=record*record;
+  }
+
+  public double hasLightLevel(Point pos) {
+    //Guard clauses
+    if (position == null) throw new IllegalStateException("Position has to be not null");
+    if (position.dimensions() != 3) throw new IllegalStateException("Position has to have 3 and only three indicies");
+    if (pos == null) throw new IllegalArgumentException("Pos(ition) has to be not null");
+    if (pos.dimensions() != 3) throw new IllegalArgumentException("Pos(ition) has to have 3 and only three indicies");
+    if (objects == null) throw new IllegalStateException("No objects defined");
+
+    //simplest case
+    System.out.println(objects.length);
+    if (objects.length == 0) return 1;
+
+    //Light -> Point
+    Vector dir = pos.subtract(position);
+    //Point -> Light
+    Vector rev = position.subtract(pos);
+
+    //Normal at pos
+    Vector normal = null;
+
+    //find distance to closest object
+    Ray    check  = new Ray(position, dir);
+    double record = Double.POSITIVE_INFINITY;
+    for (ThreeDObject object : objects) {
+      ObjectInformation temporaryData = object.collide(check);
+      if(temporaryData==null) continue;
+      if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
+        record = temporaryData.distance;
+        //get normal
+        try {
+          normal = object.getNormalAt(pos);
+        } catch(IllegalArgumentException e) {
+        }
+      }
+    }
+    //Guard clause
+    if(normal == null) throw new IllegalStateException("Point does not lie on object!");
+
+    //basic directional shading
+    double ds = normal.dot(rev.normalize());
+    ds = MathUtil.clamp(ds, 0, 1);
+
+    //squared fallof
+    double sf = strength / dir.squaredMagnitude();
+    sf = MathUtil.clamp(sf, 0, 1);
+
+    //combined return
+    double ret = ds * sf;
+
+    if (Math.abs(record*record - dir.squaredMagnitude())<SURFACE_DISTANCE || dir.squaredMagnitude()<=record*record)
+      return ret;
+    else
+      return 0;
+  }
+
+  public boolean isPointLight() {
+    return true;
+  }
+
+}

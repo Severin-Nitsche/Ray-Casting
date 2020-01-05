@@ -1,5 +1,0 @@
-public interface ThreeDObject {
-  public ObjectData data(Ray ray);
-  public double[] getNormalAt(double...pos);
-  public boolean isColorTrue();
-}

@@ -1,8 +1,13 @@
+package com.github.severinnitsche;
+
+import com.github.severinnitsche.essentials.meta.Ray;
+import com.github.severinnitsche.utilities.visual.Color;
+
 public class ObjectData {
   public double  distance;
-  public Color   color;
+  public Color color;
   public boolean colorTrue;
-  public Ray     reflection;
+  public Ray reflection;
   public double  reflectance;
 
   public ObjectData(double distance, Color color) {
