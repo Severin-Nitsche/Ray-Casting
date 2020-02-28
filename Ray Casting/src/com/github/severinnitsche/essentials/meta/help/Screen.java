@@ -14,7 +14,7 @@ public class Screen extends ThreeDPlane {
   private Vector y;
 
   public Screen(Point position, Vector normal, Vector x) {
-    super(position, normal.normalize(), Color.black(), 0, false);
+    super(position, normal.normalize(), Color.black(), 0);
     if(Math.abs(normal.dot(x)) > ZERO) throw new IllegalArgumentException("normal and x have to be orthogonal!");
     this.x = x.normalize();
     this.y = x.cross(normal).normalize();

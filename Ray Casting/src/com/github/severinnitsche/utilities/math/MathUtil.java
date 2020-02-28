@@ -1,7 +1,5 @@
 package com.github.severinnitsche.utilities.math;
 
-import java.util.Arrays;
-
 import static java.util.Arrays.*;
 
 public class MathUtil {

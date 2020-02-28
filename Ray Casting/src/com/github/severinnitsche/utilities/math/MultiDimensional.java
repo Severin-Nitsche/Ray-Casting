@@ -1,5 +1,7 @@
 package com.github.severinnitsche.utilities.math;
 
+import java.util.Arrays;
+
 public class MultiDimensional {
   public static final int X = 0;
   public static final int THETA = 0;
@@ -59,7 +61,7 @@ public class MultiDimensional {
   @Override
   public boolean equals(Object o) {
     if(o instanceof MultiDimensional) {
-      return ((MultiDimensional)o).dimension.equals(dimension);
+      return Arrays.equals(((MultiDimensional) o).dimension, dimension);
     }
     return false;
   }

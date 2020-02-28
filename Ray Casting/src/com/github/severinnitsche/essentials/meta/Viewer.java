@@ -14,6 +14,13 @@ public class Viewer {
   World world;
   RayPointer pointer;
   
+  public Viewer(Point origin, int width, int height, int density, Vector front, Vector right, double focalLength, World world) {
+    Screen screen = new Screen(origin.addN(front.normalize().multiply(focalLength)), front, right);
+    pointer = new RayPointer(screen, origin, width, height, density);
+    this.world = world;
+  }
+  
+  @Deprecated
   public Viewer(Point origin, int width, int height, int density, Vector front, Vector right, double focalLength, Light[] lights, ThreeDObject[] world) {
     Screen screen = new Screen(origin.addN(front.normalize().multiply(focalLength)), front, right);
     pointer = new RayPointer(screen, origin, width, height, density);

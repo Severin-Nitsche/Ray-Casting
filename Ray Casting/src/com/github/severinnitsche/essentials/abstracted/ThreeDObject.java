@@ -9,7 +9,7 @@ public interface ThreeDObject {
   ObjectInformation collide(Ray ray);
   /**
   *
-  * @return value between 0 (0% / no roughness) and 1 (100% / total roughness)
+  * @return value between 0 (0% / no roughness) and 1 (100% / total roughness); controls the diffusion
   *
   */
   double roughness();

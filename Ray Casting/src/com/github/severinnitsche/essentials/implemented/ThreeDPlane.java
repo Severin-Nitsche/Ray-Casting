@@ -3,19 +3,15 @@ package com.github.severinnitsche.essentials.implemented;
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.essentials.meta.help.ObjectInformation;
-import com.github.severinnitsche.utilities.math.MultiDimensional;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.visual.Color;
 
 public class ThreeDPlane implements ThreeDObject {
 
-  public static double ZERO = .001;
-
-  protected boolean colorTrue;
-
   protected Color color;
   protected double reflectance;
+  protected double roughness;
   protected Vector normal;
   protected Point position;
 
@@ -23,30 +19,20 @@ public class ThreeDPlane implements ThreeDObject {
 
   }
 
-  /**
-  *
-  * @param x - plane position
-  * @param y - plane position
-  * @param z - plane position
-  * @param direction1 - normal direction
-  * @param direction2 - normal direction
-  * @param color - The color of the plane
-  *
-  */
-  public ThreeDPlane(double x, double y, double z, double direction1, double direction2, Color color, double reflectance, boolean colorTrue) {
-    this.position = new Point(x,y,z);
-    this.normal = Vector.fromSpherical(direction1, direction2, 1);
-    this.color = color;
-    this.reflectance = reflectance;
-    this.colorTrue = colorTrue;
-  }
-
-  public ThreeDPlane(Point position, Vector normal, Color color, double reflectance, boolean colorTrue) {
+  public ThreeDPlane(Point position, Vector normal, Color color, double reflectance, double roughness) {
     this.position = position;
     this.normal = normal;
     this.color = color;
     this.reflectance = reflectance;
-    this.colorTrue = colorTrue;
+    this.roughness = roughness;
+  }
+  
+  public ThreeDPlane(Point position, Vector normal, Color color, double roughness) {
+    this.position = position;
+    this.normal = normal;
+    this.color = color;
+    this.reflectance = 1;
+    this.roughness = roughness;
   }
 
   public Point getPosition() {
@@ -103,7 +89,7 @@ public class ThreeDPlane implements ThreeDObject {
 
   @Override
   public double roughness() {
-    return 1;
+    return roughness;
   }
 
   @Override

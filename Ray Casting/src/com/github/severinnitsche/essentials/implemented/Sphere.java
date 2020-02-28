@@ -3,38 +3,34 @@ package com.github.severinnitsche.essentials.implemented;
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.essentials.meta.help.ObjectInformation;
-import com.github.severinnitsche.utilities.math.MultiDimensional;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.visual.Color;
 
 public class Sphere implements ThreeDObject {
 
-  public static final double SURFACE_DISTANCE = .0001;
-
   protected Color color;
   protected double reflectance;
+  protected double roughness;
 
   protected double radius;
   protected Point center;
 
-  public Sphere(Point position, double radius, Color color, double reflectance) {
-    if(reflectance > 1 || reflectance < 0) throw new IllegalArgumentException("reflectance needs to be in range 1 (0% reflectance) to 0 (100% reflectance)");
+  public Sphere(Point position, double radius, Color color, double roughness) {
     this.color = color;
-    this.reflectance = reflectance;
+    this.reflectance = 1;
+    this.roughness = roughness;
     this.radius = radius;
     this.center = position;
   }
-
-  public Sphere( double x, double y, double z, double radius, Color color, double reflectance) {
+  
+  public Sphere(Point position, double radius, Color color, double reflectance, double roughness) {
     if(reflectance > 1 || reflectance < 0) throw new IllegalArgumentException("reflectance needs to be in range 1 (0% reflectance) to 0 (100% reflectance)");
-    this.color       = color;
+    this.color = color;
     this.reflectance = reflectance;
-
-    this.radius      = radius;
-
-    this.center      = new Point(x,y,z);
-
+    this.roughness = roughness;
+    this.radius = radius;
+    this.center = position;
   }
 
   @Override
@@ -69,7 +65,7 @@ public class Sphere implements ThreeDObject {
 
   @Override
   public double roughness() {
-    return 1;
+    return roughness;
   }
 
   @Override
