@@ -103,7 +103,7 @@ public class ThreeDPlane implements ThreeDObject {
 
   @Override
   public double roughness() {
-    return 0;
+    return 1;
   }
 
   @Override

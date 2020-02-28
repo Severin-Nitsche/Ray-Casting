@@ -52,10 +52,37 @@ public class Color {
     setRGB((byte)nRed,(byte)nGreen,(byte)nBlue);
     return this;
   }
+  
+  public Color max(Color c) {
+    int red    = get(RED);
+    int green  = get(GREEN);
+    int blue   = get(BLUE);
+    
+    int cRed   = c.get(RED);
+    int cGreen = c.get(GREEN);
+    int cBlue  = c.get(BLUE);
+    
+    int nRed   = cRed>red?cRed:red;
+    int nGreen = cGreen>green?cGreen:green;
+    int nBlue  = cBlue>blue?cBlue:blue;
+    
+    setRGB((byte)nRed,(byte)nGreen,(byte)nBlue);
+    return this;
+  }
 
   public Color mult(double d) {
     if(0>d||d>1) throw new IllegalArgumentException("Argument out of range: expected value between 0 and 1");
     setRGB((byte)(get(RED) * d),(byte)(get(GREEN) * d),(byte)(get(BLUE) * d));
+    return this;
+  }
+  
+  public Color multS(double d) {
+    return mult(MathUtil.clamp(d,0,1));
+  }
+  
+  public Color multU(double d) {
+    //if(0>d||d>1) throw new IllegalArgumentException("Argument out of range: expected value between 0 and 1");
+    setRGB((byte)(MathUtil.clamp(get(RED) * d,Byte.MIN_VALUE,Byte.MAX_VALUE)),(byte)MathUtil.clamp(get(GREEN) * d,Byte.MIN_VALUE,Byte.MAX_VALUE),(byte)MathUtil.clamp(get(BLUE) * d,Byte.MIN_VALUE,Byte.MAX_VALUE));
     return this;
   }
 

@@ -16,35 +16,7 @@ public abstract class Light {
   public ThreeDObject[] objects  = null;
   public double strength;
   public Color color;
-
-  @Deprecated
-  public boolean isLit(Point pos) {
-    //Guard clauses
-    if (position == null) throw new IllegalStateException("Position has to be not null");
-    if (position.dimensions() != 3) throw new IllegalStateException("Position has to have 3 and only three indicies");
-    if (pos == null) throw new IllegalArgumentException("Pos(ition) has to be not null");
-    if (pos.dimensions() != 3) throw new IllegalArgumentException("Pos(ition) has to have 3 and only three indicies");
-    if (objects == null) throw new IllegalStateException("No objects defined");
-
-    //simple case
-    if (objects.length == 0) return true;
-
-    //Light -> Point
-    Vector dir = pos.subtract(position);
-
-    //find distance to closest object
-    Ray check = new Ray(position, dir);
-    double record = Double.POSITIVE_INFINITY;
-    for (ThreeDObject object : objects) {
-      ObjectInformation temporaryData = object.collide(check);
-      if (temporaryData.distance < record && temporaryData.distance > SURFACE_DISTANCE) {
-        record = temporaryData.distance;
-      }
-    }
-
-    return Math.abs(record*record - dir.squaredMagnitude())<SURFACE_DISTANCE || dir.squaredMagnitude()<=record*record;
-  }
-
+  
   public double hasLightLevel(Point pos) {
     //Guard clauses
     if (position == null) throw new IllegalStateException("Position has to be not null");
@@ -103,5 +75,7 @@ public abstract class Light {
   public boolean isPointLight() {
     return true;
   }
+  
+  public Vector[] getDirections(int samples) { return MathUtil.getVectorsOnUnitSphere(samples); }
 
 }

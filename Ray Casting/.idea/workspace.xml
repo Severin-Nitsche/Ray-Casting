@@ -2,19 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Color.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Light.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ObjectData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sphere.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreeDObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreeDPlane.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Viewer.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/QuaternionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/UnitArcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/VersorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Quaternion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Versor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/ObjectData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/ThreeDPlane.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/ThreeDPlane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/ObjectInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/ObjectInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/RayPointer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/RayPointer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/RayPointer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/RayPointer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/Screen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MultiDimensional.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MultiDimensional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/ObjectData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="258">
+              <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,13 +67,107 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+            <state relative-caret-position="214">
+              <caret line="43" column="84" selection-start-line="43" selection-start-column="84" selection-end-line="43" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1491">
+              <caret line="71" column="107" selection-start-line="71" selection-start-column="107" selection-end-line="71" selection-end-column="107" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+              <folding>
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#218#219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1176">
+              <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="861">
+              <caret line="49" column="94" selection-start-line="49" selection-start-column="94" selection-end-line="49" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+              <folding>
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#612#613#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,44 +188,45 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/ObjectData.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Point.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/abstracted/ThreeDObject.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Versor.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ForwardInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/DirectionDepth.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Quaternion.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/QuaternionTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/VersorTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/UnitArcTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Ray Casting.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="774" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -136,14 +256,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
               <item name="essentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="abstracted" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
@@ -182,6 +294,14 @@
               <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="run" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -209,10 +329,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -227,7 +349,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ray Casting">
+    <configuration name="QuaternionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.severinnitsche.run.test.QuaternionTest" />
+      <module name="Ray Casting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.severinnitsche.run.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ray Casting" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="9" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -237,6 +372,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnitArcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.severinnitsche.run.test.UnitArcTest" />
+      <module name="Ray Casting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.severinnitsche.run.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VersorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.severinnitsche.run.test.VersorTest" />
+      <module name="Ray Casting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.severinnitsche.run.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UnitArcTest" />
+        <item itemvalue="Application.VersorTest" />
+        <item itemvalue="Application.QuaternionTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -253,8 +421,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.34168014" />
+      <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3277311" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32913166" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32913166" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" show_stripe_button="false" side_tool="true" weight="0.26494345" />
+    </layout>
+    <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.26979" />
       <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
       <window_info id="Image Layers" order="2" />
@@ -273,31 +470,57 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32913166" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32956383" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32956383" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Ray_Casting$Ray_Casting.ic" NAME="Ray Casting Coverage Results" MODIFIED="1578263463864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Ray_Casting$Ray_Casting.ic" NAME="Ray Casting Coverage Results" MODIFIED="1581870920065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>colors[1]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>colors[801]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>colors[800]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>colors[1602]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/ObjectData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -310,13 +533,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -328,128 +544,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Point.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/ObjectData.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/test/QuaternionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-          <folding>
-            <element signature="e#132#133#0" expanded="true" />
-            <element signature="e#158#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="75" column="79" selection-start-line="75" selection-start-column="79" selection-end-line="75" selection-end-column="79" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="17">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/test/VersorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-282">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="44" column="45" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
+        <state relative-caret-position="273">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2541#2542#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="98" column="92" selection-start-line="98" selection-start-column="92" selection-end-line="98" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3294#3295#0" expanded="true" />
-            <element signature="e#3312#3313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Versor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="97" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="79" column="9" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -463,10 +582,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ForwardInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Quaternion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
+          <folding>
+            <element signature="e#3832#3833#0" expanded="true" />
+            <element signature="e#3894#3895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-507">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="525">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
           <folding>
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#699#700#0" expanded="true" />
@@ -474,10 +656,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="339">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/test/UnitArcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="88" column="98" selection-start-line="88" selection-start-column="98" selection-end-line="88" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -486,8 +701,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
+        <state relative-caret-position="1491">
+          <caret line="71" column="107" selection-start-line="71" selection-start-column="107" selection-end-line="71" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="75" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="49" column="94" selection-start-line="49" selection-start-column="94" selection-end-line="49" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="43" column="84" selection-start-line="43" selection-start-column="84" selection-end-line="43" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

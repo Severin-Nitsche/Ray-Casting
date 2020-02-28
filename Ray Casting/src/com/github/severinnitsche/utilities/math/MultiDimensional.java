@@ -44,6 +44,17 @@ public class MultiDimensional {
     double[] returnValue = {theta, phi, rho};
     return returnValue[d];
   }
+  
+  public void setSpherical(int d, double v) {
+    double rho = Math.sqrt(dimension[X] * dimension[X] + dimension[Y] * dimension[Y] + dimension[Z] * dimension[Z]);
+    double phi = Math.atan2(dimension[Y], dimension[X]);
+    double theta = Math.acos(dimension[Z] / rho);
+    double[] that = {theta, phi, rho};
+    that[d] = v;
+    dimension[X] = that[2] * Math.sin(that[0]) * Math.cos(that[1]);
+    dimension[Y] = that[2] * Math.sin(that[0]) * Math.sin(that[1]);
+    dimension[Z] = that[2] * Math.cos(that[0]);
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -55,7 +66,7 @@ public class MultiDimensional {
 
   @Override public String toString() {
     String ret = "";
-    for(int i=0; i<dimensions(); i++) ret+=" "+get(i);
+    for(int i=0; i<dimensions(); i++) ret+="\t"+get(i);
     return ret;
   }
 }

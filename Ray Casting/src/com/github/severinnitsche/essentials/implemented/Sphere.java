@@ -15,21 +15,18 @@ public class Sphere implements ThreeDObject {
   protected Color color;
   protected double reflectance;
 
-  protected boolean colorTrue;
-
   protected double radius;
   protected Point center;
 
-  public Sphere(Point position, double radius, Color color, double reflectance, boolean colorTrue) {
+  public Sphere(Point position, double radius, Color color, double reflectance) {
     if(reflectance > 1 || reflectance < 0) throw new IllegalArgumentException("reflectance needs to be in range 1 (0% reflectance) to 0 (100% reflectance)");
     this.color = color;
     this.reflectance = reflectance;
     this.radius = radius;
     this.center = position;
-    this.colorTrue = colorTrue;
   }
 
-  public Sphere( double x, double y, double z, double radius, Color color, double reflectance, boolean colorTrue ) {
+  public Sphere( double x, double y, double z, double radius, Color color, double reflectance) {
     if(reflectance > 1 || reflectance < 0) throw new IllegalArgumentException("reflectance needs to be in range 1 (0% reflectance) to 0 (100% reflectance)");
     this.color       = color;
     this.reflectance = reflectance;
@@ -38,7 +35,6 @@ public class Sphere implements ThreeDObject {
 
     this.center      = new Point(x,y,z);
 
-    this.colorTrue   = colorTrue;
   }
 
   @Override
@@ -73,7 +69,7 @@ public class Sphere implements ThreeDObject {
 
   @Override
   public double roughness() {
-    return 0;
+    return 1;
   }
 
   @Override

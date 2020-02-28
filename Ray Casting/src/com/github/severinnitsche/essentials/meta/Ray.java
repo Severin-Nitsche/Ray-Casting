@@ -25,5 +25,7 @@ public class Ray {
   public Vector getDirection() {
     return new Vector(direction);
   }
+  
+  
 
 }

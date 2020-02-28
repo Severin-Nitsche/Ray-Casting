@@ -26,11 +26,11 @@ public class Vector extends MultiDimensional {
   }
 
   public Vector subtract(Vector v) {
-      if(v.dimensions()!=dimensions()) throw new IllegalArgumentException("Dimension must be of equal length!");
-      for(int i=0; i<dimensions(); i++) {
-        set(i,get(i)-v.get(i));
-      }
-      return this;
+    if(v.dimensions()!=dimensions()) throw new IllegalArgumentException("Dimension must be of equal length!");
+    for(int i=0; i<dimensions(); i++) {
+      set(i,get(i)-v.get(i));
+    }
+    return this;
   }
 
   public Vector multiply(double s) {

@@ -22,6 +22,10 @@ public class RayPointer implements Iterable<Ray> {
     this.height = height;
     this.density = density;
   }
+  
+  public Screen getScreen() {return screen;}
+  
+  public Point getOrigin() {return new Point(origin);}
 
   public Ray get(int x, int y) {
     double X = MathUtil.map(x,0,width*density-1,-width/2d,width/2d);
@@ -30,9 +34,20 @@ public class RayPointer implements Iterable<Ray> {
     //double Y = ((double)y - (double)(height * density - 1) / 2d) / ((double)(height * density - 1) / 2d);
     return screen.get(new Point(origin), new Point(X,Y));
   }
+  
+  public int getWidth() {return width;}
+  
+  public int getHeight() {return height;}
 
+  public int getDensity() {return density;}
+  
   public int size() {
     return width * height * density * density;
+  }
+  
+  public boolean isInRange(Point p) {
+    if(p.dimensions()!=2) throw new IllegalStateException("p must have 2 dimesnions");
+    return p.get(0)>=-width/2d&&p.get(0)<=width/2d && p.get(1)>=-width/2d&&p.get(1)<=width/2d;
   }
 
   @Override

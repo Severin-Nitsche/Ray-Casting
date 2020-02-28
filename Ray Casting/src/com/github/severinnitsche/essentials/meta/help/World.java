@@ -8,7 +8,9 @@ import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.visual.Color;
 
-public class World {
+import java.util.Iterator;
+
+public class World implements Iterable<ThreeDObject>{
   
   public static final double SURFACE_DISTANCE = .01;
   
@@ -19,8 +21,10 @@ public class World {
     this.objects = objects;
     this.lights = lights;
   }
+  
+  public Light[] getLights() {return lights;}
 
-  private LightInfo lightFor(Point p) {
+  public LightInfo lightFor(Point p) {
     if(lights==null) return null;
     double[] ret = new double[lights.length];
     for(int i=0; i<lights.length; i++) {
@@ -30,7 +34,7 @@ public class World {
     return info;
   }
 
-  private ObjectInformation infoFor(Ray ray) {
+  public ObjectInformation infoFor(Ray ray) {
     double record = Double.POSITIVE_INFINITY;
     ObjectInformation info = null;
     for (ThreeDObject object : objects) {
@@ -65,8 +69,30 @@ public class World {
       if(lighting[i]==null) continue;
       Color temp = lighting[i].litColor(colors[i]);
       if(c==null) c=temp;
-      else c = temp.add(c.mult(objects[i+1].reflectance()).mult(MathUtil.map(objects[i].roughness(),0,1,1,0)));
+      else c = temp.add(c.mult(objects[i+1].reflectance()).mult(MathUtil.map(objects[i].roughness(),0,1,0,1)));
     }
     return c==null?Color.black():c;
+  }
+  
+  @Override
+  public Iterator<ThreeDObject> iterator() {
+    return new Iterator<ThreeDObject>() {
+      
+      int i;
+      
+      {
+        i = 0;
+      }
+      
+      @Override
+      public boolean hasNext() {
+        return i < objects.length;
+      }
+  
+      @Override
+      public ThreeDObject next() {
+        return objects[i++];
+      }
+    };
   }
 }

@@ -4,6 +4,7 @@ import com.github.severinnitsche.essentials.implemented.ThreeDPlane;
 import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
+import com.github.severinnitsche.utilities.visual.Color;
 
 public class Screen extends ThreeDPlane {
 
@@ -13,7 +14,7 @@ public class Screen extends ThreeDPlane {
   private Vector y;
 
   public Screen(Point position, Vector normal, Vector x) {
-    super(position, normal.normalize(), null, 0, false);
+    super(position, normal.normalize(), Color.black(), 0, false);
     if(Math.abs(normal.dot(x)) > ZERO) throw new IllegalArgumentException("normal and x have to be orthogonal!");
     this.x = x.normalize();
     this.y = x.cross(normal).normalize();
@@ -21,6 +22,17 @@ public class Screen extends ThreeDPlane {
 
   public Point getPosition() {
     return new Point(position);
+  }
+  
+  public Point localize(Point g) {
+    //test if g lies in Plane
+    Vector og = g.subtract(getPosition());
+    if(Math.abs(getNormal().dot(og))>ZERO) throw new IllegalStateException("g does not lie in Plane!");
+    
+    double xcomp = x.dot(og);
+    double ycomp = y.dot(og);
+    
+    return new Point(xcomp,ycomp);
   }
 
   public Vector getX() {
