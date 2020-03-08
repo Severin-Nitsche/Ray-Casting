@@ -1,0 +1,89 @@
+Point:
+  group: "none"
+  name: "Point"
+  alias: "none"
+  class: "com.github.severinnitsche.utilities.math.Point"
+  options:
+    dimensions: "[double]"
+
+Vector:
+  group: "none"
+  name: "Vector"
+  alias: "R3"
+  class: "com.github.severinnitsche.utilities.math.Vector"
+  options:
+    dimensions: "[double]"
+
+Color:
+  group: "none"
+  name: "Color"
+  alias: "color;colour;Colour"
+  class: "com.github.severinnitsche.utilities.visual.Color"
+  options:
+    red: "byte"
+    green: "byte"
+    blue: "byte"
+
+Model:
+  group: "none"
+  name: "none"
+  alias: "none"
+  class: "com.github.severinnitsche.essentials.abstracted.ThreeDObject"
+  options: "none"
+
+Sphere:
+  group: "Model"
+  name: "Sphere"
+  alias: "sphere"
+  class: "com.github.severinnitsche.essentials.implemented.Sphere"
+  options:
+    position: "Point"
+    radius: "double"
+    color: "Color"
+    roughness: "double"
+
+Plane3D:
+  group: "Model"
+  name: "Plane3D"
+  alias: "plane;Plane"
+  class: "com.github.severinnitsche.essentials.implemented.ThreeDPlane"
+  options:
+    position: "Point"
+    normal: "Vector"
+    color: "Color"
+    roughness: "double"
+
+Light:
+  group: "none"
+  name: "Light"
+  alias: "light;sun;Sun"
+  class: "com.github.severinnitsche.essentials.meta.Light"
+  options:
+    position: "Point"
+    objects: "[Model]"
+    strength: "double"
+    color: "Color"
+
+World:
+  group: "none"
+  name: "World"
+  alias: "world;scene;Scene"
+  class: "com.github.severinnitsche.essentials.meta.help.World"
+  options:
+    objects: "[Model]"
+    lights: "[Light]"
+
+Camera:
+  group: "none"
+  name: "Camera"
+  alias: "cam;camera;Cam;Viewer;viewer"
+  class: "com.github.severinnitsche.essentials.meta.Viewer"
+  options:
+    origin: "Point"
+    width: "int"
+    height: "int"
+    density: "int"
+    front: "Vector"
+    right: "Vector"
+    focallength: "double"
+    world: "World"

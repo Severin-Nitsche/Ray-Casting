@@ -7,7 +7,7 @@ import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.visual.Color;
 
-public abstract class Light {
+public class Light {
 
   public static final double SURFACE_DISTANCE = .01;
   public static final double ZERO             = .1;
@@ -16,6 +16,13 @@ public abstract class Light {
   public ThreeDObject[] objects  = null;
   public double strength;
   public Color color;
+  
+  public Light(Point position, ThreeDObject[] objects, double strength, Color color) {
+    this.position = position;
+    this.objects = objects;
+    this.strength = strength;
+    this.color = color;
+  }
   
   public double hasLightLevel(Point pos) {
     //Guard clauses

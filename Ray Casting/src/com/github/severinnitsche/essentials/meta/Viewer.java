@@ -27,6 +27,18 @@ public class Viewer {
     this.world = new World(world, lights);
   }
   
+  public int getWidth() {
+    return pointer.getWidth();
+  }
+  
+  public int getHeight() {
+    return pointer.getHeight();
+  }
+  
+  public int getDensity() {
+    return pointer.getDensity();
+  }
+  
   private boolean hitsOrigin(Point position, Vector direction, double size) {
     //test whether light reaches origin
     Vector op = position.subtract(pointer.getOrigin()); //origin -> position

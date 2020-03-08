@@ -31,11 +31,7 @@ public class Main {
     
     ThreeDObject[] world = {sphere,plane};
     
-    Light l = new Light() {};
-    l.position = new Point(0,0,0);
-    l.objects = world;
-    l.strength = Integer.MAX_VALUE;
-    l.color = new Color((byte)255,(byte)255,(byte)255);
+    Light l = new Light(new Point(0,0,0),world,Integer.MAX_VALUE,new Color((byte)255,(byte)255,(byte)255));
     
     Light[] lights = {l};
     

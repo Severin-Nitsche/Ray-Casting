@@ -1,0 +1,92 @@
+origin:
+  ilk: "Point"
+  arguments:
+    dimensions: "[0;0;0]"
+
+front:
+  ilk: "Vector"
+  arguments:
+    dimensions: "[0;0;1]"
+
+right:
+  ilk: "Vector"
+  arguments:
+    dimensions: "[1;0;0]"
+
+red:
+  ilk: "Color"
+  arguments:
+    red: "255"
+    green: "40"
+    blue: "35"
+
+blue:
+  ilk: "Color"
+  arguments:
+    red: "100"
+    green: "50"
+    blue: "245"
+
+center:
+  ilk: "Point"
+  arguments:
+    dimensions: "[0;0;10]"
+
+sphere:
+  ilk: "Sphere"
+  arguments:
+    position: "center"
+    radius: "4"
+    color: "red"
+    roughness: ".5"
+
+bottom:
+  ilk: "Point"
+  arguments:
+    dimensions: "[0;-5;0]"
+
+up:
+  ilk: "Vector"
+  arguments:
+    dimensions: "[0;1;0]"
+
+plane:
+  ilk: "plane"
+  arguments:
+    position: "bottom"
+    normal: "up"
+    color: "blue"
+    roughness: ".5"
+
+white:
+  ilk: "Color"
+  arguments:
+    red: "250"
+    green: "245"
+    blue: "220"
+
+light:
+  ilk: "light"
+  arguments:
+    position: "origin"
+    objects: "[plane;sphere]"
+    strength: "10000"
+    color: "white"
+
+world:
+  ilk: "world"
+  arguments:
+    objects: "[sphere;plane]"
+    lights: "[light]"
+
+viewer:
+  ilk: "viewer"
+  arguments:
+    origin: "origin"
+    width: "4"
+    height: "4"
+    density: "200"
+    front: "front"
+    right: "right"
+    focallength: "1"
+    world: "world"
