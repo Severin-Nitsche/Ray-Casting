@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/scenes/example.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Exceptions/IlkNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Exceptions/MarkupNotSupportedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Ilk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Markup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="53" selection-end-column="57" />
+            <state relative-caret-position="264">
+              <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-455">
+            <state relative-caret-position="310">
               <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
             </state>
           </provider>
@@ -57,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="-1260">
               <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
@@ -66,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="192" column="5" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+            <state relative-caret-position="175">
+              <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="181" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -756,34 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="49" column="46" lean-forward="true" selection-start-line="49" selection-start-column="46" selection-end-line="53" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -806,10 +765,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="192" column="5" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+        <state relative-caret-position="175">
+          <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="181" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
