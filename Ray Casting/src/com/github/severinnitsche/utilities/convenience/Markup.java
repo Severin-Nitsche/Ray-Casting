@@ -4,6 +4,7 @@ import com.github.severinnitsche.utilities.convenience.Exceptions.MarkupNotSuppo
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public class Markup {
   private static Map<String,Markup> markups;
@@ -55,7 +56,7 @@ public class Markup {
           String key = line.trim().replace(":","");
           
           //replaces everything but the first white Space
-          String indent = "  ";//lines[i+1].replaceFirst(lines[i+1].replaceFirst("\\s",""),"");
+          String indent = lines[i+1].replaceFirst(Pattern.quote(lines[i+1].replaceFirst("\\s+","")),"");
           
           StringBuilder value = new StringBuilder();
           for(i=i+1; lines[i].startsWith(indent); i++) {
