@@ -33,7 +33,6 @@ public class Light {
     if (objects == null) throw new IllegalStateException("No objects defined");
 
     //simplest case
-    System.out.println(objects.length);
     if (objects.length == 0) return 1;
 
     //Light -> Point

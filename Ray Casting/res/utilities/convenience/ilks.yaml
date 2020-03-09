@@ -87,3 +87,22 @@ Camera:
     right: "Vector"
     focallength: "double"
     world: "World"
+
+Texture:
+  group: "none"
+  name: "Texture"
+  alias: "texture;img;image;Image"
+  class: "com.github.severinnitsche.utilities.visual.Texture"
+  options:
+    file: "String"
+
+TextureSphere:
+  group: "Model"
+  name: "TextureSphere"
+  alias: "textureSphere;texturedSphere;TexturedSphere"
+  class: "com.github.severinnitsche.essentials.implemented.TexturedSphere"
+  options:
+    position: "Point"
+    radius: "double"
+    texture: "Texture"
+    roughness: "double"

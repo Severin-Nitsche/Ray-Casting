@@ -41,8 +41,8 @@ public class MultiDimensional {
   public double getSpherical(int d) {
     if(d<0^d>3) throw new IllegalArgumentException("d must be between 0 and 2");
     double rho = Math.sqrt(dimension[X] * dimension[X] + dimension[Y] * dimension[Y] + dimension[Z] * dimension[Z]);
-    double phi = Math.atan2(dimension[Y], dimension[X]);
-    double theta = Math.acos(dimension[Z] / rho);
+    double phi = Math.atan2(dimension[Y], dimension[X]); //[-PI...PI]
+    double theta = Math.acos(dimension[Z] / rho); //[0...PI]
     double[] returnValue = {theta, phi, rho};
     return returnValue[d];
   }

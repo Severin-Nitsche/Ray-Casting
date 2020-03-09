@@ -1,12 +1,8 @@
 package com.github.severinnitsche.utilities.convenience;
 
-import com.github.severinnitsche.essentials.implemented.Sphere;
 import com.github.severinnitsche.essentials.meta.Viewer;
 import com.github.severinnitsche.utilities.convenience.Exceptions.IlkNotFoundException;
 import com.github.severinnitsche.utilities.convenience.Exceptions.MarkupNotSupportedException;
-import com.github.severinnitsche.utilities.math.Point;
-import com.github.severinnitsche.utilities.visual.Color;
-
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -22,35 +18,28 @@ public class SceneParser {
   protected BufferedReader reader;
   Map<String,Object> objectMap;
   
-  {
-    loader = new IlkLoader();
-    try {
-      loader.load();
-    } catch (IOException e) {
-      e.printStackTrace();
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-    } catch (IlkNotFoundException e) {
-      e.printStackTrace();
-    }
-    try {
-      markup = Markup.MarkupForName("yaml");
-    } catch (MarkupNotSupportedException e) {
-      e.printStackTrace();
-    }
+  public SceneParser(String mkup, String ilkPath, String scenePath) throws IOException, IlkNotFoundException, ClassNotFoundException, MarkupNotSupportedException {
+    loader = new IlkLoader(ilkPath, mkup);
+    loader.load();
+    markup = Markup.MarkupForName(mkup);
     objectMap = new LinkedHashMap<>();
-  }
-  
-  public SceneParser() throws FileNotFoundException {
-    File defaultDir = new File("res/scenes");
+    File defaultDir = new File(scenePath);
     for(File file : defaultDir.listFiles()) {
-      if(file.getName().endsWith(".yaml")) {
+      if(file.getName().endsWith(mkup)) {
         location = file;
         break;
       }
     }
-    if(location==null) throw new FileNotFoundException("Could not locate yaml file in default directory");
+    if(location==null) throw new FileNotFoundException("Could not locate "+mkup+" file in "+scenePath+" directory");
     reader = new BufferedReader(new FileReader(location));
+  }
+  
+  public SceneParser(String mkup, String scenePath) throws ClassNotFoundException, MarkupNotSupportedException, IlkNotFoundException, IOException {
+    this(mkup,"res/utilities/convenience/ilks.yaml",scenePath);
+  }
+  
+  public SceneParser() throws ClassNotFoundException, MarkupNotSupportedException, IlkNotFoundException, IOException {
+    this("yaml","res/utilities/convenience/ilks.yaml","res/scenes");
   }
   
   public void load() throws IOException, IlkNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
@@ -79,7 +68,9 @@ public class SceneParser {
         } else if(ilk.getOptions()[i]==char.class) {
           args[i] = value.charAt(0);
         } else if(ilk.getOptions()[i]==byte.class) {
-          args[i] = (byte)Integer.parseInt(value);
+          args[i] = (byte) Integer.parseInt(value);
+        }else if(ilk.getOptions()[i]==String.class) {
+          args[i] = value;
         } else if(ilk.getOptions()[i]==double[].class) {
           value = value.replaceAll("\\[","").replaceAll("]","");
           String[] values = value.split(";");
@@ -136,6 +127,10 @@ public class SceneParser {
             v[j] = (byte)Integer.parseInt(values[j]);
           }
           args[i] = v;
+        } else if(ilk.getOptions()[i]==String[].class) {
+          value = value.replaceAll("\\[","").replaceAll("]","");
+          String[] values = value.split(";");
+          args[i] = values;
         } else if(ilk.getOptions()[i].isArray()) {
           value = value.replaceAll("\\[","").replaceAll("]","");
           String[] values = value.split(";");
@@ -168,29 +163,15 @@ public class SceneParser {
   
     frame.add(new JLabel(new ImageIcon(img)));
   
-    frame.setSize(600,600);
+    frame.setSize(viewer.getWidth()*viewer.getDensity(),viewer.getHeight()*viewer.getDensity());
     frame.setVisible(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
   
-  public static void main(String[] args) throws FileNotFoundException {
+  public static void main(String[] args) throws IOException, ClassNotFoundException, MarkupNotSupportedException, IlkNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
     SceneParser parser = new SceneParser();
-    try {
-      parser.load();
-      parser.render();
-    } catch (IOException e) {
-      e.printStackTrace();
-    } catch (IlkNotFoundException e) {
-      e.printStackTrace();
-    } catch (NoSuchMethodException e) {
-      e.printStackTrace();
-    } catch (IllegalAccessException e) {
-      e.printStackTrace();
-    } catch (InvocationTargetException e) {
-      e.printStackTrace();
-    } catch (InstantiationException e) {
-      e.printStackTrace();
-    }
+    parser.load();
+    parser.render();
   }
   
 }

@@ -29,13 +29,6 @@ public class Markup {
     throw new MarkupNotSupportedException(markup);
   }
   
-  protected static final boolean in(String s, String[] v) {
-    for(String k : v) {
-      if(s.equals(k)) return true;
-    }
-    return false;
-  }
-  
   public Map<String,String> parseMarkup(String markup) {
     Map<String,String> map = new LinkedHashMap<>();
     

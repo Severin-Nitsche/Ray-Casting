@@ -49,7 +49,6 @@ public class World implements Iterable<ThreeDObject>{
   }
 
   public Color colorFor(Ray ray, int depth) {
-    //TODO: implement roughness
     Color[] colors = new Color[depth];
     LightInfo[] lighting = new LightInfo[depth];
     ThreeDObject[] objects = new ThreeDObject[depth];

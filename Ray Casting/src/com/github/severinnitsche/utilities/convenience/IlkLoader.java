@@ -13,19 +13,27 @@ public class IlkLoader {
   protected Map<Ilk,Class> ilkMap;
   protected Markup markupParser;
   
-  {
-    location = new File("res/utilities/convenience/ilks.yaml");
+  public IlkLoader(String path, String markup) {
+    location = new File(path);
     try {
       reader = new BufferedReader(new FileReader(location));
     } catch (FileNotFoundException e) {
-      System.out.println("Warning: could not locate ilks.yaml");
+      System.out.println("Warning: could not locate: "+path);
     }
     try {
-      markupParser = Markup.MarkupForName("yaml");
+      markupParser = Markup.MarkupForName(markup);
     } catch (MarkupNotSupportedException e) {
       System.out.println("Error: Markup failure");
     }
     ilkMap = new LinkedHashMap<>();
+  }
+  
+  public IlkLoader(String path) {
+    this(path,"yaml");
+  }
+  
+  public IlkLoader() {
+    this("res/utilities/convenience/ilks.yaml","yaml");
   }
   
   protected Ilk ilkForId(String id) throws IlkNotFoundException {
@@ -57,11 +65,11 @@ public class IlkLoader {
     }
     Map<String,String> ilkSpecs = markupParser.parseMarkup(contents.toString());
     for(String id : ilkSpecs.keySet()) {
-      registerCommand(id,ilkSpecs.get(id));
+      registerIlk(id,ilkSpecs.get(id));
     }
   }
   
-  protected void registerCommand(String id, String specs) throws ClassNotFoundException, IlkNotFoundException {
+  protected void registerIlk(String id, String specs) throws ClassNotFoundException, IlkNotFoundException {
     Map<String,String> specValues = markupParser.parseMarkup(specs);
     Class clazz = Class.forName(specValues.get("class"));
     String name = specValues.get("name");
@@ -100,6 +108,9 @@ public class IlkLoader {
             case "long":
               options[i] = long[].class;
               break;
+            case "String":
+              options[i] = String[].class;
+              break;
             default:
               options[i] = Class.forName("[L" + classForIlk(ilkForId(optionType)).getName() + ";");
           }
@@ -125,6 +136,9 @@ public class IlkLoader {
               break;
             case "long":
               options[i] = long.class;
+              break;
+            case "String":
+              options[i] = String.class;
               break;
             default:
               options[i] = classForIlk(ilkForId(optionType));

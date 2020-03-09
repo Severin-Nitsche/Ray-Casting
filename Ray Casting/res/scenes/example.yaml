@@ -13,49 +13,22 @@ right:
   arguments:
     dimensions: "[1;0;0]"
 
-red:
-  ilk: "Color"
-  arguments:
-    red: "255"
-    green: "40"
-    blue: "35"
-
-blue:
-  ilk: "Color"
-  arguments:
-    red: "100"
-    green: "50"
-    blue: "245"
-
 center:
   ilk: "Point"
   arguments:
     dimensions: "[0;0;10]"
 
-sphere:
-  ilk: "Sphere"
+marsTexture:
+  ilk: "texture"
+  arguments:
+    file: "res/textures/mars.jpg"
+
+mars:
+  ilk: "TextureSphere"
   arguments:
     position: "center"
     radius: "4"
-    color: "red"
-    roughness: ".5"
-
-bottom:
-  ilk: "Point"
-  arguments:
-    dimensions: "[0;-5;0]"
-
-up:
-  ilk: "Vector"
-  arguments:
-    dimensions: "[0;1;0]"
-
-plane:
-  ilk: "plane"
-  arguments:
-    position: "bottom"
-    normal: "up"
-    color: "blue"
+    texture: "marsTexture"
     roughness: ".5"
 
 white:
@@ -69,14 +42,14 @@ light:
   ilk: "light"
   arguments:
     position: "origin"
-    objects: "[plane;sphere]"
+    objects: "[mars]"
     strength: "10000"
     color: "white"
 
 world:
   ilk: "world"
   arguments:
-    objects: "[sphere;plane]"
+    objects: "[mars]"
     lights: "[light]"
 
 viewer:
@@ -88,5 +61,5 @@ viewer:
     density: "200"
     front: "front"
     right: "right"
-    focallength: "1"
+    focallength: "2"
     world: "world"
