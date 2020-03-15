@@ -7,55 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Ray_Casting_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/SeverinNitsche.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/limited/Tri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/TexturedEllipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/TexturedTri.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/exceptions/MatrixConversionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/Sphere.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/TexturedSphere.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/implemented/ThreeDPlane.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Light.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/Screen.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/help/Screen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Exceptions/IlkNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Exceptions/IlkNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Exceptions/MarkupNotSupportedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Exceptions/MarkupNotSupportedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Markup.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/Markup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/SceneParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/SceneParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MultiDimensional.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MultiDimensional.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/Vector.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/Vector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Texture.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/visual/Texture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/scenes/example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/scenes/example.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/Sphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/TexturedSphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/TexturedSphere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/ThreeDPlane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/Screen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Exceptions/IlkNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/exceptions/IlkNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Exceptions/MarkupNotSupportedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/exceptions/MarkupNotSupportedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Markup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Markup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MultiDimensional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Vector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +29,45 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5908#5909#0" expanded="true" />
+                <element signature="e#5942#5943#0" expanded="true" />
+                <element signature="e#5978#5979#0" expanded="true" />
+                <element signature="e#6016#6017#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,11 +133,11 @@
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/TexturedEllipse.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" />
       </list>
     </option>
   </component>
@@ -157,6 +154,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,54 +166,6 @@
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Ray_Casting_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="scenes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="textures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="convenience" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -222,62 +173,6 @@
               <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="implemented" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="implemented" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="implemented" type="462c0819:PsiDirectoryNode" />
-              <item name="textured" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="meta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="run" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
@@ -285,14 +180,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-              <item name="convenience" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
@@ -302,12 +189,18 @@
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
               <item name="logger" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="values" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,8 +333,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.4006462" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.40710825" />
       <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -928,22 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="202" column="18" lean-forward="true" selection-start-line="202" selection-start-column="18" selection-end-line="202" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5556#5557#0" expanded="true" />
-            <element signature="e#5580#5581#0" expanded="true" />
-            <element signature="e#5863#5864#0" expanded="true" />
-            <element signature="e#5893#5894#0" expanded="true" />
-            <element signature="e#5942#5943#0" expanded="true" />
-            <element signature="e#6016#6017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -951,13 +829,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="123" selection-start-line="7" selection-start-column="123" selection-end-line="7" selection-end-column="123" />
         </state>
       </provider>
     </entry>
@@ -993,8 +864,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="171">
+          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5908#5909#0" expanded="true" />
+            <element signature="e#5942#5943#0" expanded="true" />
+            <element signature="e#5978#5979#0" expanded="true" />
+            <element signature="e#6016#6017#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -160,6 +160,7 @@ public class Logger {
     }
     
     public String format(String msg) {
+      if(System.getenv().get("TERM") == null && !System.getProperty("os.name").contains("Mac")) return msg;
       String prefix = "";
       switch (style) {
         case BOLD:

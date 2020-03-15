@@ -1,5 +1,7 @@
 package com.github.severinnitsche.utilities.logger;
 
+import com.github.severinnitsche.utilities.values.Values;
+
 import java.text.DecimalFormat;
 
 public class Loader{
@@ -19,7 +21,7 @@ public class Loader{
   public void load(int n, int d) {
     double p = n/(double)d;
     StringBuilder builder = new StringBuilder();
-    builder.append("\r");
+    builder.append(Values.LINE_RETURN);
     DecimalFormat f = new DecimalFormat("#.##");
     String percent = "["+n+"/"+d+" | "+f.format(p*100)+"%]";
     int tokens = 80-2-percent.length();
