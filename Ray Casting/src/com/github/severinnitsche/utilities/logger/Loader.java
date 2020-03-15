@@ -24,7 +24,7 @@ public class Loader{
     builder.append(Values.LINE_RETURN);
     DecimalFormat f = new DecimalFormat("#.##");
     String percent = "["+n+"/"+d+" | "+f.format(p*100)+"%]";
-    int tokens = 80-2-percent.length();
+    int tokens = Values.WIDTH-2-percent.length();
     builder.append(percent);
     builder.append("[");
     for(int i=0; i<tokens; i++) {

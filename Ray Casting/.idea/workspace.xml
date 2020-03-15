@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="156">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,17 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="151">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
+            <state relative-caret-position="283">
+              <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5908#5909#0" expanded="true" />
@@ -135,9 +129,9 @@
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" />
       </list>
     </option>
   </component>
@@ -862,33 +856,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="162" column="92" selection-start-line="162" selection-start-column="92" selection-end-line="162" selection-end-column="92" />
+        <state relative-caret-position="283">
+          <caret line="164" column="22" lean-forward="true" selection-start-line="164" selection-start-column="22" selection-end-line="164" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5908#5909#0" expanded="true" />
             <element signature="e#5942#5943#0" expanded="true" />
             <element signature="e#5978#5979#0" expanded="true" />
             <element signature="e#6016#6017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/values/Values.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Loader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
