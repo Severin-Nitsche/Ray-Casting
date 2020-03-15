@@ -3,11 +3,15 @@ package com.github.severinnitsche.essentials.meta;
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.meta.help.*;
 import com.github.severinnitsche.utilities.compute.Asset;
+import com.github.severinnitsche.utilities.logger.Loader;
 import com.github.severinnitsche.utilities.math.MathUtil;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.structure.Stack;
 import com.github.severinnitsche.utilities.visual.Color;
+
+import java.awt.image.BufferedImage;
+import java.io.IOException;
 
 public class Viewer {
   
@@ -113,11 +117,13 @@ public class Viewer {
     return colors;
   }
   
-  public int[] getViewColorArray(int depth) {
+  public int[] getViewColorArray(int depth) throws IOException {
+    Loader loader = new Loader();
     int[] colors = new int[pointer.size()];
     int i = 0;
     for (Ray r : pointer) {
       colors[i] = world.colorFor(r, depth).getRGB();
+      loader.load(i+1,pointer.size());
       i++;
     }
     return colors;

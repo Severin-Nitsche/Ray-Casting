@@ -13,6 +13,8 @@ public class Color {
   public Color(int rgb) {
     this.rgb = rgb;
   }
+  
+  public Color(Color c) { this(c.getRGB()); }
 
   public Color(byte red, byte green, byte blue) {
     setRGB(red, green, blue);

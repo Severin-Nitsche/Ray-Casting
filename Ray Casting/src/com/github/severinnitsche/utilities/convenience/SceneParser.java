@@ -1,8 +1,8 @@
 package com.github.severinnitsche.utilities.convenience;
 
 import com.github.severinnitsche.essentials.meta.Viewer;
-import com.github.severinnitsche.utilities.convenience.Exceptions.IlkNotFoundException;
-import com.github.severinnitsche.utilities.convenience.Exceptions.MarkupNotSupportedException;
+import com.github.severinnitsche.utilities.convenience.exceptions.IlkNotFoundException;
+import com.github.severinnitsche.utilities.convenience.exceptions.MarkupNotSupportedException;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -148,7 +148,7 @@ public class SceneParser {
     }
   }
   
-  public void render() {
+  public void render() throws IOException {
     Viewer viewer = null;
     for(Object object : objectMap.values()) {
       if(object instanceof Viewer) {
@@ -156,11 +156,11 @@ public class SceneParser {
         break;
       }
     }
-    JFrame frame = new JFrame("Rendered");
     BufferedImage img = new BufferedImage(viewer.getWidth()*viewer.getDensity(),viewer.getHeight()*viewer.getDensity(),BufferedImage.TYPE_INT_RGB);
-  
+    
     img.setRGB(0,0,viewer.getWidth()*viewer.getDensity(),viewer.getHeight()*viewer.getDensity(),viewer.getViewColorArray(10),0,viewer.getDensity()*viewer.getWidth());
   
+    JFrame frame = new JFrame("Rendered");
     frame.add(new JLabel(new ImageIcon(img)));
   
     frame.setSize(viewer.getWidth()*viewer.getDensity(),viewer.getHeight()*viewer.getDensity());

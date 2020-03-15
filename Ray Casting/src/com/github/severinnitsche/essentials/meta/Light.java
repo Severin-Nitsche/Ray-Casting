@@ -55,6 +55,7 @@ public class Light {
         try {
           normal = object.getNormalAt(pos);
         } catch(IllegalArgumentException e) {
+          e.printStackTrace();
         }
       }
     }

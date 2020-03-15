@@ -33,9 +33,10 @@ public class MultiDimensional {
     return dimension[d];
   }
 
-  public void set(int d, double v) {
+  public MultiDimensional set(int d, double v) {
     if(d>=dimension.length) throw new IllegalArgumentException("d must be less than dimensions");
     dimension[d] = v;
+    return this;
   }
 
   public double getSpherical(int d) {
@@ -67,8 +68,15 @@ public class MultiDimensional {
   }
 
   @Override public String toString() {
-    String ret = "";
-    for(int i=0; i<dimensions(); i++) ret+="\t"+get(i);
-    return ret;
+    StringBuilder builder = new StringBuilder();
+    builder.append("(");
+    for(int i=0; i<dimensions(); i++) {
+      builder.append(get(i));
+      if(i!=dimensions()-1) {
+        builder.append(" |");
+      }
+    }
+    builder.append(")");
+    return builder.toString();
   }
 }

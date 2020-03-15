@@ -14,6 +14,15 @@ Vector:
   options:
     dimensions: "[double]"
 
+Versor:
+  goup: "none"
+  name: "Versor"
+  alias: "versor"
+  class: "com.github.severinnitsche.utilities.math.Versor"
+  options:
+    axis: "Vector"
+    theta: "double"
+
 Color:
   group: "none"
   name: "Color"
@@ -35,7 +44,7 @@ Sphere:
   group: "Model"
   name: "Sphere"
   alias: "sphere"
-  class: "com.github.severinnitsche.essentials.implemented.Sphere"
+  class: "com.github.severinnitsche.essentials.implemented.basic.Sphere"
   options:
     position: "Point"
     radius: "double"
@@ -46,7 +55,7 @@ Plane3D:
   group: "Model"
   name: "Plane3D"
   alias: "plane;Plane"
-  class: "com.github.severinnitsche.essentials.implemented.ThreeDPlane"
+  class: "com.github.severinnitsche.essentials.implemented.basic.ThreeDPlane"
   options:
     position: "Point"
     normal: "Vector"
@@ -100,9 +109,61 @@ TextureSphere:
   group: "Model"
   name: "TextureSphere"
   alias: "textureSphere;texturedSphere;TexturedSphere"
-  class: "com.github.severinnitsche.essentials.implemented.TexturedSphere"
+  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedSphere"
   options:
     position: "Point"
     radius: "double"
     texture: "Texture"
     roughness: "double"
+
+Tri:
+  group: "Model"
+  name: "Tri"
+  alias: "tri"
+  class: "com.github.severinnitsche.essentials.implemented.limited.Tri"
+  options:
+    a: "Point"
+    b: "Point"
+    c: "Point"
+    color: "Color"
+    roughness: "double"
+
+TextureTri:
+  group: "Model"
+  name: "TextureTri"
+  alias: "textureTri;texturedTri;TexturedTri;textured;Textured"
+  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedTri"
+  options:
+    a: "Point"
+    b: "Point"
+    c: "Point"
+    texture: "Texture"
+    roughness: "double"
+
+Ellipse:
+  group: "Model"
+  name: "Ellipse"
+  alias: "ellipse"
+  class: "com.github.severinnitsche.essentials.implemented.basic.Ellipse"
+  options:
+    color: "Color"
+    roughness: "double"
+    position: "Point"
+    rotation: "Versor"
+    a: "double"
+    b: "double"
+    c: "double"
+
+TexturedEllipse:
+  group: "Model"
+  name: "TexturedEllipse"
+  alias: "texturedEllipse"
+  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedEllipse"
+  options:
+    texture: "Texture"
+    roughness: "double"
+    position: "Point"
+    rotation: "Versor"
+    a: "double"
+    b: "double"
+    c: "double"

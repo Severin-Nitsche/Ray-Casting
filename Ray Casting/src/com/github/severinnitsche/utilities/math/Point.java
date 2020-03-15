@@ -13,6 +13,28 @@ public class Point extends MultiDimensional{
     double z = rho * Math.cos(theta);
     return new Point(x,y,z);
   }
+  
+  public Matrix asColumn() {
+    double[][] m = new double[4][1];
+    for(int i=0; i<3; i++) {
+      m[i][0] = this.get(i);
+    }
+    m[3][0] = 1;
+    return new Matrix(m);
+  }
+  
+  public Matrix asRow() {
+    double[][] m = new double[1][4];
+    for(int i=0; i<3; i++) {
+      m[0][i] = this.get(i);
+    }
+    m[0][3] = 1;
+    return new Matrix(m);
+  }
+  
+  public Vector asVector() {
+    return new Vector(this);
+  }
 
   public Point add(Vector v) {
     if(v.dimensions()!=dimensions()) throw new IllegalArgumentException("Dimension must be of equal length!");

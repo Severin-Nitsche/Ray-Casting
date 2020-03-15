@@ -1,6 +1,6 @@
 package com.github.severinnitsche.essentials.meta.help;
 
-import com.github.severinnitsche.essentials.implemented.ThreeDPlane;
+import com.github.severinnitsche.essentials.implemented.basic.ThreeDPlane;
 import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;

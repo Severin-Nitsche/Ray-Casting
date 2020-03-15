@@ -16,6 +16,10 @@ public class Texture extends Color{
     img = ImageIO.read(new File(file));
   }
   
+  protected Texture() {
+    super(0);
+  }
+  
   public Color to(double u, double v) {
     
     int x = (int)((img.getWidth() - 1) * clamp(u,0,1));

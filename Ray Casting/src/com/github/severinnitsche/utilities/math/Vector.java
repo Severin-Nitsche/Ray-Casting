@@ -24,6 +24,26 @@ public class Vector extends MultiDimensional {
     }
     return this;
   }
+  
+  public Matrix asColumn() {
+    double[][] m = new double[4][1];
+    for(int i=0; i<3; i++) {
+      m[i][0] = this.get(i);
+    }
+    return new Matrix(m);
+  }
+  
+  public Matrix asRow() {
+    double[][] m = new double[1][4];
+    for(int i=0; i<3; i++) {
+      m[0][i] = this.get(i);
+    }
+    return new Matrix(m);
+  }
+  
+  public Point asPoint() {
+    return new Point(this);
+  }
 
   public Vector subtract(Vector v) {
     if(v.dimensions()!=dimensions()) throw new IllegalArgumentException("Dimension must be of equal length!");

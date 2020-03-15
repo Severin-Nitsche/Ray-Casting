@@ -13,43 +13,64 @@ right:
   arguments:
     dimensions: "[1;0;0]"
 
+up:
+  ilk: "Vector"
+  arguments:
+    dimensions: "[0;1;0]"
+
 center:
   ilk: "Point"
   arguments:
     dimensions: "[0;0;10]"
 
-marsTexture:
-  ilk: "texture"
+red:
+  ilk: "Color"
   arguments:
-    file: "res/textures/mars.jpg"
-
-mars:
-  ilk: "TextureSphere"
-  arguments:
-    position: "center"
-    radius: "4"
-    texture: "marsTexture"
-    roughness: ".5"
+    red: "245"
+    green: "54"
+    blue: "21"
 
 white:
   ilk: "Color"
   arguments:
-    red: "250"
-    green: "245"
-    blue: "220"
+    red: "248"
+    green: "230"
+    blue: "195"
+
+marsTexture:
+  ilk: "Texture"
+  arguments:
+    file: "res/textures/mars.jpg"
+
+rotor:
+  ilk: "Versor"
+  arguments:
+    axis: "up"
+    theta: ".5"
+
+ellipse:
+  ilk: "texturedEllipse"
+  arguments:
+    texture: "marsTexture"
+    roughness: ".5"
+    position: "center"
+    rotation: "rotor"
+    a: "8"
+    b: "4"
+    c: "4"
 
 light:
   ilk: "light"
   arguments:
     position: "origin"
-    objects: "[mars]"
+    objects: "[ellipse]"
     strength: "10000"
     color: "white"
 
 world:
   ilk: "world"
   arguments:
-    objects: "[mars]"
+    objects: "[ellipse]"
     lights: "[light]"
 
 viewer:

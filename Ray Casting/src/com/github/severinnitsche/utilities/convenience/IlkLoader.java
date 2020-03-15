@@ -1,7 +1,8 @@
 package com.github.severinnitsche.utilities.convenience;
 
-import com.github.severinnitsche.utilities.convenience.Exceptions.IlkNotFoundException;
-import com.github.severinnitsche.utilities.convenience.Exceptions.MarkupNotSupportedException;
+import com.github.severinnitsche.utilities.convenience.exceptions.IlkNotFoundException;
+import com.github.severinnitsche.utilities.convenience.exceptions.MarkupNotSupportedException;
+import com.github.severinnitsche.utilities.logger.Logger;
 
 import java.io.*;
 import java.util.LinkedHashMap;
@@ -18,12 +19,12 @@ public class IlkLoader {
     try {
       reader = new BufferedReader(new FileReader(location));
     } catch (FileNotFoundException e) {
-      System.out.println("Warning: could not locate: "+path);
+      Logger.LOGGER.warn("could not locate: "+path);
     }
     try {
       markupParser = Markup.MarkupForName(markup);
     } catch (MarkupNotSupportedException e) {
-      System.out.println("Error: Markup failure");
+      Logger.LOGGER.error("Markup failure");
     }
     ilkMap = new LinkedHashMap<>();
   }

@@ -1,6 +1,6 @@
 package com.github.severinnitsche.utilities.convenience;
 
-import com.github.severinnitsche.utilities.convenience.Exceptions.MarkupNotSupportedException;
+import com.github.severinnitsche.utilities.convenience.exceptions.MarkupNotSupportedException;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
