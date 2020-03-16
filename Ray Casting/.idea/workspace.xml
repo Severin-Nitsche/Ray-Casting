@@ -7,25 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/abstracted/Light.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/test/LoggerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/test/LoggerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Style.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Style.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/scenes/example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/scenes/example.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/implemented/Light.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,28 +22,32 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state relative-caret-position="218">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1908#1909#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#1990#1991#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java">
+        <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
-                <element signature="e#1944#1945#0" expanded="true" />
-                <element signature="e#2011#2012#0" expanded="true" />
-                <element signature="e#2096#2097#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="213">
+              <caret line="175" column="22" lean-forward="true" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -153,6 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,7 +356,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -503,8 +489,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.42003232" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.42649436" />
       <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -970,13 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2184">
@@ -1013,7 +993,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="-456">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
@@ -1021,14 +1001,25 @@
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
             <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
             <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1990#1991#0" expanded="true" />
             <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
             <element signature="e#2096#2097#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="175" column="22" lean-forward="true" selection-start-line="175" selection-start-column="22" selection-end-line="175" selection-end-column="22" />
         </state>
       </provider>
     </entry>
