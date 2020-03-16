@@ -181,18 +181,13 @@ public class Logger {
   }
   
   public void log(String msg, Format format, boolean newLine) {
-    String formatted = format.format(msg)+(newLine?System.lineSeparator():"");
-    for(int i=0; i<formatted.length(); i++) {
-      out.write(formatted.charAt(i));
-    }
-    out.flush();
+    String formatted = format.format(msg);
+    log(formatted,newLine);
   }
   
   public void log(String msg, boolean newLine) {
     String formatted = msg+(newLine?System.lineSeparator():"");
-    for(int i=0; i<formatted.length(); i++) {
-      out.write(formatted.charAt(i));
-    }
+    out.print(formatted);
     out.flush();
   }
   
