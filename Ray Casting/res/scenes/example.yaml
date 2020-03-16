@@ -42,35 +42,48 @@ marsTexture:
   arguments:
     file: "res/textures/mars.jpg"
 
+marsBump:
+  ilk: "heightMap"
+  arguments:
+    file: "res/maps/mars_small.jpg"
+
 rotor:
   ilk: "Versor"
   arguments:
     axis: "up"
-    theta: ".5"
+    theta: "0"
 
 ellipse:
   ilk: "texturedEllipse"
   arguments:
     texture: "marsTexture"
-    roughness: ".5"
+    roughness: "0"
     position: "center"
     rotation: "rotor"
-    a: "8"
+    a: "4"
     b: "4"
     c: "4"
+
+mars:
+  ilk: "Container"
+  arguments:
+    object: "ellipse"
+    bump: "marsBump"
+    rotor: "rotor"
+    strength: ".2"
 
 light:
   ilk: "light"
   arguments:
     position: "origin"
-    objects: "[ellipse]"
-    strength: "10000"
+    objects: "[mars]"
+    strength: "100000"
     color: "white"
 
 world:
   ilk: "world"
   arguments:
-    objects: "[ellipse]"
+    objects: "[mars]"
     lights: "[light]"
 
 viewer:
@@ -79,7 +92,7 @@ viewer:
     origin: "origin"
     width: "4"
     height: "4"
-    density: "200"
+    density: "175"
     front: "front"
     right: "right"
     focallength: "2"

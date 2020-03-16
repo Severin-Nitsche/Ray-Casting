@@ -1,4 +1,4 @@
-package com.github.severinnitsche.essentials.implemented.textured;
+package com.github.severinnitsche.essentials.implemented.textured.simple;
 
 import com.github.severinnitsche.essentials.implemented.limited.Tri;
 import com.github.severinnitsche.essentials.meta.Ray;
@@ -22,10 +22,10 @@ public class TexturedTri extends Tri {
     
     Vector p = info.position.subtract(position);
   
-    double u = Math.sqrt(p.project(ac).squaredMagnitude()) / Math.sqrt(ac.squaredMagnitude());
-    double v = Math.sqrt(p.project(ab).squaredMagnitude()) / Math.sqrt(ab.squaredMagnitude());
+    info.u = Math.sqrt(p.project(ac).squaredMagnitude()) / Math.sqrt(ac.squaredMagnitude());
+    info.v = Math.sqrt(p.project(ab).squaredMagnitude()) / Math.sqrt(ab.squaredMagnitude());
     
-    info.c = new Color(((Texture)color).to(u,v).getRGB());
+    info.c = new Color(((Texture)color).to(info.u,info.v).getRGB());
     
     return info;
   }

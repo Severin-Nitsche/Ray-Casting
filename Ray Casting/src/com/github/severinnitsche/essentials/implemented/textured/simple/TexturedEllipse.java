@@ -1,4 +1,4 @@
-package com.github.severinnitsche.essentials.implemented.textured;
+package com.github.severinnitsche.essentials.implemented.textured.simple;
 
 import com.github.severinnitsche.essentials.implemented.basic.Ellipse;
 import com.github.severinnitsche.essentials.meta.Ray;
@@ -27,10 +27,10 @@ public class TexturedEllipse extends Ellipse {
     
     Vector normal = rotor.rotate(info.normal);
     
-    double tu = normal.getSpherical(1)/ MathUtil.TAU+.5;
-    double tv = normal.getSpherical(0)/MathUtil.PI;
+    info.u = normal.getSpherical(1)/ MathUtil.TAU+.5;
+    info.v = normal.getSpherical(0)/MathUtil.PI;
     
-    info.c = new Color(((Texture)this.color).to(tu,tv).getRGB());
+    info.c = new Color(((Texture)this.color).to(info.u,info.v).getRGB());
     
     return info;
   }

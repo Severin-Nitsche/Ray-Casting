@@ -53,7 +53,7 @@ public class Light {
         record = temporaryData.distance;
         //get normal
         try {
-          normal = object.getNormalAt(pos);
+          normal = temporaryData.normal;//object.getNormalAt(pos);
         } catch(IllegalArgumentException e) {
           e.printStackTrace();
         }

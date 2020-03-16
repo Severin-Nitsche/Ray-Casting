@@ -1,5 +1,4 @@
 Point:
-  group: "none"
   name: "Point"
   alias: "none"
   class: "com.github.severinnitsche.utilities.math.Point"
@@ -7,7 +6,6 @@ Point:
     dimensions: "[double]"
 
 Vector:
-  group: "none"
   name: "Vector"
   alias: "R3"
   class: "com.github.severinnitsche.utilities.math.Vector"
@@ -15,7 +13,6 @@ Vector:
     dimensions: "[double]"
 
 Versor:
-  goup: "none"
   name: "Versor"
   alias: "versor"
   class: "com.github.severinnitsche.utilities.math.Versor"
@@ -24,7 +21,6 @@ Versor:
     theta: "double"
 
 Color:
-  group: "none"
   name: "Color"
   alias: "color;colour;Colour"
   class: "com.github.severinnitsche.utilities.visual.Color"
@@ -34,14 +30,12 @@ Color:
     blue: "byte"
 
 Model:
-  group: "none"
   name: "none"
   alias: "none"
   class: "com.github.severinnitsche.essentials.abstracted.ThreeDObject"
   options: "none"
 
 Sphere:
-  group: "Model"
   name: "Sphere"
   alias: "sphere"
   class: "com.github.severinnitsche.essentials.implemented.basic.Sphere"
@@ -52,7 +46,6 @@ Sphere:
     roughness: "double"
 
 Plane3D:
-  group: "Model"
   name: "Plane3D"
   alias: "plane;Plane"
   class: "com.github.severinnitsche.essentials.implemented.basic.ThreeDPlane"
@@ -63,7 +56,6 @@ Plane3D:
     roughness: "double"
 
 Light:
-  group: "none"
   name: "Light"
   alias: "light;sun;Sun"
   class: "com.github.severinnitsche.essentials.meta.Light"
@@ -74,7 +66,6 @@ Light:
     color: "Color"
 
 World:
-  group: "none"
   name: "World"
   alias: "world;scene;Scene"
   class: "com.github.severinnitsche.essentials.meta.help.World"
@@ -83,7 +74,6 @@ World:
     lights: "[Light]"
 
 Camera:
-  group: "none"
   name: "Camera"
   alias: "cam;camera;Cam;Viewer;viewer"
   class: "com.github.severinnitsche.essentials.meta.Viewer"
@@ -98,7 +88,6 @@ Camera:
     world: "World"
 
 Texture:
-  group: "none"
   name: "Texture"
   alias: "texture;img;image;Image"
   class: "com.github.severinnitsche.utilities.visual.Texture"
@@ -106,10 +95,9 @@ Texture:
     file: "String"
 
 TextureSphere:
-  group: "Model"
   name: "TextureSphere"
   alias: "textureSphere;texturedSphere;TexturedSphere"
-  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedSphere"
+  class: "com.github.severinnitsche.essentials.implemented.textured.simple.TexturedSphere"
   options:
     position: "Point"
     radius: "double"
@@ -117,7 +105,6 @@ TextureSphere:
     roughness: "double"
 
 Tri:
-  group: "Model"
   name: "Tri"
   alias: "tri"
   class: "com.github.severinnitsche.essentials.implemented.limited.Tri"
@@ -129,10 +116,9 @@ Tri:
     roughness: "double"
 
 TextureTri:
-  group: "Model"
   name: "TextureTri"
   alias: "textureTri;texturedTri;TexturedTri;textured;Textured"
-  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedTri"
+  class: "com.github.severinnitsche.essentials.implemented.textured.simple.TexturedTri"
   options:
     a: "Point"
     b: "Point"
@@ -141,7 +127,6 @@ TextureTri:
     roughness: "double"
 
 Ellipse:
-  group: "Model"
   name: "Ellipse"
   alias: "ellipse"
   class: "com.github.severinnitsche.essentials.implemented.basic.Ellipse"
@@ -155,10 +140,9 @@ Ellipse:
     c: "double"
 
 TexturedEllipse:
-  group: "Model"
   name: "TexturedEllipse"
   alias: "texturedEllipse"
-  class: "com.github.severinnitsche.essentials.implemented.textured.TexturedEllipse"
+  class: "com.github.severinnitsche.essentials.implemented.textured.simple.TexturedEllipse"
   options:
     texture: "Texture"
     roughness: "double"
@@ -167,3 +151,20 @@ TexturedEllipse:
     a: "double"
     b: "double"
     c: "double"
+
+BumpMap:
+  name: "BumpMap"
+  alias: "bumpMap;HeightMap;heightMap;Map;map"
+  class: "com.github.severinnitsche.utilities.visual.BumpMap"
+  options:
+    file: "String"
+
+Container:
+  name: "Container"
+  alias: "container;Bumper;bumper"
+  class: "com.github.severinnitsche.essentials.implemented.textured.bumped.Container"
+  options:
+    object: "com.github.severinnitsche.essentials.abstracted.ThreeDObject"
+    bump: "BumpMap"
+    rotor: "Versor"
+    strength: "double"

@@ -44,12 +44,14 @@ public class IlkLoader {
     throw new IlkNotFoundException(id);
   }
   
-  protected Ilk ilkForNameIdorAlias(String iid) throws IlkNotFoundException {
+  protected Ilk ilkForNameIDorAlias(String iid) throws IlkNotFoundException {
     for(Ilk ilk : ilkMap.keySet()) {
       if(ilk.getId().equals(iid)) return ilk;
       if(ilk.getName().equals(iid)) return ilk;
-      for(String alias : ilk.getAlias()) {
-        if(alias.equals(iid)) return ilk;
+      if(ilk.getAlias() != null){
+        for(String alias : ilk.getAlias()) {
+          if(alias.equals(iid)) return ilk;
+        }
       }
     }
     throw new IlkNotFoundException(iid);
@@ -74,11 +76,10 @@ public class IlkLoader {
     Map<String,String> specValues = markupParser.parseMarkup(specs);
     Class clazz = Class.forName(specValues.get("class"));
     String name = specValues.get("name");
-    String group = specValues.get("group");
-    String[] alias = specValues.get("alias").split(";");
+    String[] alias = specValues.get("alias").equals("none")?null:specValues.get("alias").split(";");
     Class<?>[] options = null;
     String[] optionNames = null;
-    if(specValues.get("options") != "none") {
+    if(!specValues.get("options").equals("none")) {
       Map<String, String> optionTypeMap = markupParser.parseMarkup(specValues.get("options"));
       options = new Class<?>[optionTypeMap.size()];
       optionNames = new String[optionTypeMap.size()];
@@ -142,13 +143,17 @@ public class IlkLoader {
               options[i] = String.class;
               break;
             default:
-              options[i] = classForIlk(ilkForId(optionType));
+              try {
+                options[i] = Class.forName(optionType);
+              } catch (ClassNotFoundException e) {
+                options[i] = classForIlk(ilkForId(optionType));
+              }
           }
         }
         i++;
       }
     }
-    Ilk ilk = new Ilk(id,name,alias, options, optionNames, group);
+    Ilk ilk = new Ilk(id,name,alias, options, optionNames);
     ilkMap.put(ilk,clazz);
   }
   

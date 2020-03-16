@@ -6,15 +6,13 @@ public final class Ilk {
   protected final String[] alias;
   protected final Class<?>[] options;
   protected final String[] optionNames;
-  protected final String group;
   
-  public Ilk(String id, String name, String[] alias, Class<?>[] options, String[] optionNames, String group) {
+  public Ilk(String id, String name, String[] alias, Class<?>[] options, String[] optionNames) {
     this.id = id;
     this.name = name;
     this.alias = alias;
     this.options = options;
     this.optionNames = optionNames;
-    this.group = group;
   }
   
   public Class<?>[] getOptions() {

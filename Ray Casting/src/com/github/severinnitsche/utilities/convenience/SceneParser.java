@@ -3,6 +3,10 @@ package com.github.severinnitsche.utilities.convenience;
 import com.github.severinnitsche.essentials.meta.Viewer;
 import com.github.severinnitsche.utilities.convenience.exceptions.IlkNotFoundException;
 import com.github.severinnitsche.utilities.convenience.exceptions.MarkupNotSupportedException;
+import com.github.severinnitsche.utilities.logger.Logger;
+import com.oracle.tools.packager.Log;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -50,7 +54,7 @@ public class SceneParser {
     Map<String,String> nameSpecMap = markup.parseMarkup(contents.toString());
     for(String name : nameSpecMap.keySet()) {
       Map<String,String> specValue = markup.parseMarkup(nameSpecMap.get(name));
-      Ilk ilk = loader.ilkForNameIdorAlias(specValue.get("ilk"));
+      Ilk ilk = loader.ilkForNameIDorAlias(specValue.get("ilk"));
       Object[] args = new Object[ilk.argLength()];
       Map<String,String> argValue = markup.parseMarkup(specValue.get("arguments"));
       for(int i=0; i<ilk.argLength(); i++) {
@@ -166,6 +170,16 @@ public class SceneParser {
     frame.setSize(viewer.getWidth()*viewer.getDensity(),viewer.getHeight()*viewer.getDensity());
     frame.setVisible(true);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  
+    Logger.LOGGER.log("\nSave [Y|N]",new Logger.Format(Logger.Format.Style.UNDERLINED, Logger.Format.Color.DARK_GREEN,null), false);
+    Logger.LOGGER.log(" ",false);
+    char save = (char)System.in.read();
+    if(save =='Y' || save == 'y' || save == 'j' || save == 'J') {
+      File f = new File("res/out/"+this.hashCode()+"_out.png");
+      ImageIO.write(img,"png",f);
+      Logger.LOGGER.log("Done",new Logger.Format(Logger.Format.Style.NORMAL, Logger.Format.Color.LIGHT_GREEN,null));
+      System.exit(0);
+    }
   }
   
   public static void main(String[] args) throws IOException, ClassNotFoundException, MarkupNotSupportedException, IlkNotFoundException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException {
