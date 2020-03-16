@@ -68,7 +68,6 @@ public class MathUtil {
   }
   
   public static Vector[] getVectorsOnUnitArc(int n, double radian) {
-    double factor = radian / TAU;
     Vector[] vectors = new Vector[n];
     for(int i=0; i<n; i++) {
       double theta = i * GOLDENANGLE;

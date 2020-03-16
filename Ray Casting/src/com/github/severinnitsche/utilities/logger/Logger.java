@@ -1,6 +1,5 @@
 package com.github.severinnitsche.utilities.logger;
 
-import java.io.IOException;
 import java.io.PrintStream;
 
 public class Logger {

@@ -10,7 +10,6 @@ import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.structure.Stack;
 import com.github.severinnitsche.utilities.visual.Color;
 
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 public class Viewer {

@@ -11,7 +11,7 @@ import java.util.Map;
 public class IlkLoader {
   protected File location;
   protected BufferedReader reader;
-  protected Map<Ilk,Class> ilkMap;
+  protected Map<Ilk,Class<?>> ilkMap;
   protected Markup markupParser;
   
   public IlkLoader(String path, String markup) {
@@ -74,7 +74,7 @@ public class IlkLoader {
   
   protected void registerIlk(String id, String specs) throws ClassNotFoundException, IlkNotFoundException {
     Map<String,String> specValues = markupParser.parseMarkup(specs);
-    Class clazz = Class.forName(specValues.get("class"));
+    Class<?> clazz = Class.forName(specValues.get("class"));
     String name = specValues.get("name");
     String[] alias = specValues.get("alias").equals("none")?null:specValues.get("alias").split(";");
     Class<?>[] options = null;

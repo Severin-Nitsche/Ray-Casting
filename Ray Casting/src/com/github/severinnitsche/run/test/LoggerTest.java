@@ -12,7 +12,6 @@ public class LoggerTest {
     System.out.println("Yolo");
     System.out.print("\0337Hallo Welt\0338G'day");
     char escCode = 0x1B;
-    int row = 0; int column = 0;
     System.out.print(String.format("%c7%s%c7%s",escCode,"Hello World",escCode,"G'Day"));
     System.out.println("Test"+(char)127);
     System.out.print("old line");
