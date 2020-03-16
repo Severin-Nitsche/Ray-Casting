@@ -1,21 +1,22 @@
-package com.github.severinnitsche.essentials.meta;
+package com.github.severinnitsche.essentials.meta.lights.implemented;
 
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
+import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.essentials.meta.help.ObjectInformation;
 import com.github.severinnitsche.utilities.math.MathUtil;
 import com.github.severinnitsche.utilities.math.Point;
 import com.github.severinnitsche.utilities.math.Vector;
 import com.github.severinnitsche.utilities.visual.Color;
 
-public class Light {
+public class Light implements com.github.severinnitsche.essentials.meta.lights.abstracted.Light {
 
   public static final double SURFACE_DISTANCE = .01;
   public static final double ZERO             = .1;
 
-  public Point position = null;
-  public ThreeDObject[] objects  = null;
-  public double strength;
-  public Color color;
+  protected Point position = null;
+  protected ThreeDObject[] objects  = null;
+  protected double strength;
+  protected Color color;
   
   public Light(Point position, ThreeDObject[] objects, double strength, Color color) {
     this.position = position;
@@ -44,7 +45,7 @@ public class Light {
     Vector normal = null;
 
     //find distance to closest object
-    Ray    check  = new Ray(position, dir);
+    Ray check  = new Ray(position, dir);
     double record = Double.POSITIVE_INFINITY;
     for (ThreeDObject object : objects) {
       ObjectInformation temporaryData = object.collide(check);
@@ -84,5 +85,25 @@ public class Light {
   }
   
   public Vector[] getDirections(int samples) { return MathUtil.getVectorsOnUnitSphere(samples); }
-
+  
+  @Override
+  public Color getColor(Vector v) {
+    return color;
+  }
+  
+  @Override
+  public double getStrength() {
+    return strength;
+  }
+  
+  @Override
+  public Point getPosition() {
+    return new Point(position);
+  }
+  
+  @Override
+  public Vector getDirTo(Point p) {
+    return p.subtract(position);
+  }
+  
 }

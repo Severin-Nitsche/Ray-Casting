@@ -55,10 +55,16 @@ Plane3D:
     color: "Color"
     roughness: "double"
 
+Lamp:
+  name: "none"
+  alias: "none"
+  class: "com.github.severinnitsche.essentials.meta.lights.abstracted.Light"
+  options: "none"
+
 Light:
   name: "Light"
   alias: "light;sun;Sun"
-  class: "com.github.severinnitsche.essentials.meta.Light"
+  class: "com.github.severinnitsche.essentials.meta.lights.implemented.Light"
   options:
     position: "Point"
     objects: "[Model]"
@@ -71,7 +77,7 @@ World:
   class: "com.github.severinnitsche.essentials.meta.help.World"
   options:
     objects: "[Model]"
-    lights: "[Light]"
+    lights: "[Lamp]"
 
 Camera:
   name: "Camera"
@@ -164,7 +170,22 @@ Container:
   alias: "container;Bumper;bumper"
   class: "com.github.severinnitsche.essentials.implemented.textured.bumped.Container"
   options:
-    object: "com.github.severinnitsche.essentials.abstracted.ThreeDObject"
+    object: "Model"
     bump: "BumpMap"
     rotor: "Versor"
     strength: "double"
+
+LitEllipse:
+  name: "LitEllipse"
+  alias: "litEllipse"
+  class: "com.github.severinnitsche.essentials.implemented.textured.lit.LitEllipse"
+  options:
+    objects: "[Model]"
+    strength: "double"
+    texture: "Texture"
+    roughness: "double"
+    position: "Point"
+    rotor: "Versor"
+    a: "double"
+    b: "double"
+    c: "double"

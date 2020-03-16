@@ -3,7 +3,7 @@ package com.github.severinnitsche.run;
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.implemented.basic.Sphere;
 import com.github.severinnitsche.essentials.implemented.basic.ThreeDPlane;
-import com.github.severinnitsche.essentials.meta.Light;
+import com.github.severinnitsche.essentials.meta.lights.implemented.Light;
 import com.github.severinnitsche.essentials.meta.Viewer;
 import com.github.severinnitsche.essentials.meta.help.World;
 import com.github.severinnitsche.utilities.math.Point;

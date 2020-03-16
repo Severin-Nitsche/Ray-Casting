@@ -2,6 +2,7 @@ package com.github.severinnitsche.essentials.meta;
 
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.meta.help.*;
+import com.github.severinnitsche.essentials.meta.lights.abstracted.Light;
 import com.github.severinnitsche.utilities.compute.Asset;
 import com.github.severinnitsche.utilities.logger.Loader;
 import com.github.severinnitsche.utilities.math.MathUtil;
@@ -57,16 +58,16 @@ public class Viewer {
   }
   
   public int[] getLightColorArray(int samples, int depth, double size) {
+    Loader loader = new Loader();
     int[] colors = new int[pointer.size()];  //color array / image
     for (Light light : world.getLights()) {  //iterate through all Lights
-      Point position = new Point(light.position);  //position of the light origin
+      Point position = light.getPosition();  //position of the light origin
       int progress = 0;
       for (Vector direction : light.getDirections(samples)) { //iterate through 'all' directions of the light
         
-        System.out.println(progress+" / "+samples+" ["+((double)progress/samples*100)+"%]");
-        progress++;
+        loader.load(progress+1, samples);
         
-        Stack<ReflectInfo> directions = new Stack<>(new ReflectInfo(direction,0,position,light.color,light.strength));
+        Stack<ReflectInfo> directions = new Stack<>(new ReflectInfo(direction,0,position,light.getColor(direction),light.getStrength()));
   
         for(ReflectInfo rf : directions) { //iterate through the depth+directions
   

@@ -18,10 +18,15 @@ up:
   arguments:
     dimensions: "[0;1;0]"
 
-center:
+marsCenter:
   ilk: "Point"
   arguments:
-    dimensions: "[0;0;10]"
+    dimensions: "[4;0;10]"
+
+sunCenter:
+  ilk: "Point"
+  arguments:
+    dimensions: "[-2;0;10]"
 
 red:
   ilk: "Color"
@@ -42,6 +47,11 @@ marsTexture:
   arguments:
     file: "res/textures/mars.jpg"
 
+sunTexture:
+  ilk: "Texture"
+  arguments:
+    file: "res/textures/sun.jpg"
+
 marsBump:
   ilk: "heightMap"
   arguments:
@@ -58,11 +68,11 @@ ellipse:
   arguments:
     texture: "marsTexture"
     roughness: "0"
-    position: "center"
+    position: "marsCenter"
     rotation: "rotor"
-    a: "4"
-    b: "4"
-    c: "4"
+    a: "1"
+    b: "1"
+    c: "1"
 
 mars:
   ilk: "Container"
@@ -72,19 +82,24 @@ mars:
     rotor: "rotor"
     strength: ".2"
 
-light:
-  ilk: "light"
+sun:
+  ilk: "litEllipse"
   arguments:
-    position: "origin"
+    position: "sunCenter"
+    rotor: "rotor"
+    a: "3"
+    b: "3"
+    c: "3"
+    roughness: "0"
+    texture: "sunTexture"
+    strength: "10000"
     objects: "[mars]"
-    strength: "100000"
-    color: "white"
 
 world:
   ilk: "world"
   arguments:
-    objects: "[mars]"
-    lights: "[light]"
+    objects: "[mars;sun]"
+    lights: "[sun]"
 
 viewer:
   ilk: "viewer"
@@ -92,8 +107,8 @@ viewer:
     origin: "origin"
     width: "4"
     height: "4"
-    density: "175"
+    density: "200"
     front: "front"
     right: "right"
-    focallength: "2"
+    focallength: "3"
     world: "world"

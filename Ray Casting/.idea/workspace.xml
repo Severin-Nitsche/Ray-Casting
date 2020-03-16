@@ -7,11 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2c74613-d9fc-4b68-95dc-1dfef28d7350" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/abstracted/Light.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/essentials/meta/Viewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/test/LoggerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/run/test/LoggerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/convenience/IlkLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Color.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Style.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format$Style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger$Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/logger/Logger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/production/Ray Casting/com/github/severinnitsche/utilities/math/MathUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/scenes/example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/scenes/example.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/implemented/Light.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +41,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-693">
-              <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+            <state relative-caret-position="188">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1944#1945#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2096#2097#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,10 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/UnitArcTest.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/abstracted/ThreeDObject.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/Sphere.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/ThreeDPlane.java" />
@@ -72,7 +98,6 @@
         <option value="$PROJECT_DIR$/res/utilities/convenience/groups.yaml" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Markup.java" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/Exceptions/IlkNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/TexturedSphere.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/limited/Tri.java" />
@@ -100,13 +125,18 @@
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/BumpMap.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/bumped/Container.java" />
-        <option value="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" />
-        <option value="$PROJECT_DIR$/res/scenes/example.yaml" />
-        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/run/test/LoggerTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/IlkLoader.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/logger/Logger.java" />
         <option value="$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/MathUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/abstracted/Light.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/implemented/Light.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java" />
+        <option value="$PROJECT_DIR$/res/utilities/convenience/ilks.yaml" />
+        <option value="$PROJECT_DIR$/res/scenes/example.yaml" />
+        <option value="$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java" />
       </list>
     </option>
   </component>
@@ -129,6 +159,30 @@
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
               <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="scenes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="convenience" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
@@ -170,6 +224,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
               <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="implemented" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="implemented" type="462c0819:PsiDirectoryNode" />
+              <item name="textured" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="implemented" type="462c0819:PsiDirectoryNode" />
+              <item name="textured" type="462c0819:PsiDirectoryNode" />
+              <item name="lit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="implemented" type="462c0819:PsiDirectoryNode" />
+              <item name="textured" type="462c0819:PsiDirectoryNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
               <item name="meta" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -180,6 +272,35 @@
               <item name="essentials" type="462c0819:PsiDirectoryNode" />
               <item name="meta" type="462c0819:PsiDirectoryNode" />
               <item name="help" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
+              <item name="abstracted" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ray Casting" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="severinnitsche" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="meta" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
+              <item name="implemented" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Ray Casting" type="b2602c69:ProjectViewProjectNode" />
@@ -382,9 +503,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.42003232" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.42003232" />
       <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -393,7 +513,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3277311" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3277311" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,36 +533,18 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" show_stripe_button="false" side_tool="true" weight="0.26494345" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49719888" visible="true" weight="0.35864297" />
-      <window_info id="Structure" order="1" sideWeight="0.5028011" side_tool="true" weight="0.2657512" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3277311" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32913166" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32913166" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" show_stripe_button="false" side_tool="true" weight="0.26494345" />
-    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/Ellipse.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Ray_Casting$Ray_Casting.ic" NAME="Ray Casting Coverage Results" MODIFIED="1581870920065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
@@ -472,29 +574,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/structure/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding>
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/compute/Asset.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/math/Quaternion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3633">
@@ -514,30 +593,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/RayPointer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,36 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="103" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,16 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="185" column="29" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ObjectInformation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -761,16 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Light.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/visual/BumpMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -778,13 +787,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="169" column="21" selection-start-line="169" selection-start-column="21" selection-end-line="169" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -797,27 +799,10 @@
     <entry file="file://$PROJECT_DIR$/res/out/Mars_16M.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/abstracted/ThreeDObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/Ellipse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -854,16 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/simple/TexturedEllipse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/bumped/Container.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -871,13 +846,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -919,6 +887,148 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-693">
           <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/run/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="51" column="27" lean-forward="true" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/ReflectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/abstracted/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/lights/implemented/Light.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="105" column="30" selection-start-line="105" selection-start-column="30" selection-end-line="105" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2925#2926#0" expanded="true" />
+            <element signature="e#2946#2947#0" expanded="true" />
+            <element signature="e#3167#3168#0" expanded="true" />
+            <element signature="e#3188#3189#0" expanded="true" />
+            <element signature="e#3255#3256#0" expanded="true" />
+            <element signature="e#3273#3274#0" expanded="true" />
+            <element signature="e#3327#3328#0" expanded="true" />
+            <element signature="e#3348#3349#0" expanded="true" />
+            <element signature="e#3414#3415#0" expanded="true" />
+            <element signature="e#3435#3436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Ray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/utilities/convenience/SceneParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="142" column="46" lean-forward="true" selection-start-line="142" selection-start-column="46" selection-end-line="142" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/utilities/convenience/ilks.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/Viewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2184">
+          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/meta/help/LightInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="66" selection-start-line="2" selection-start-column="66" selection-end-line="2" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/simple/TexturedEllipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/basic/Ellipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/scenes/example.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/severinnitsche/essentials/implemented/textured/lit/LitEllipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="32" column="11" lean-forward="true" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

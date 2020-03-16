@@ -1,7 +1,7 @@
 package com.github.severinnitsche.essentials.meta.help;
 
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
-import com.github.severinnitsche.essentials.meta.Light;
+import com.github.severinnitsche.essentials.meta.lights.abstracted.Light;
 import com.github.severinnitsche.essentials.meta.Ray;
 import com.github.severinnitsche.utilities.math.MathUtil;
 import com.github.severinnitsche.utilities.math.Point;
@@ -27,10 +27,12 @@ public class World implements Iterable<ThreeDObject>{
   public LightInfo lightFor(Point p) {
     if(lights==null) return null;
     double[] ret = new double[lights.length];
+    Vector[] dirs = new Vector[lights.length];
     for(int i=0; i<lights.length; i++) {
       ret[i] = lights[i].hasLightLevel(p);
+      dirs[i] = lights[i].getDirTo(p);
     }
-    LightInfo info = new LightInfo(ret,lights);
+    LightInfo info = new LightInfo(ret,lights,dirs);
     return info;
   }
 
