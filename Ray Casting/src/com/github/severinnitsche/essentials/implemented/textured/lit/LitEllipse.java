@@ -2,6 +2,8 @@ package com.github.severinnitsche.essentials.implemented.textured.lit;
 
 import com.github.severinnitsche.essentials.abstracted.ThreeDObject;
 import com.github.severinnitsche.essentials.implemented.textured.simple.TexturedEllipse;
+import com.github.severinnitsche.essentials.meta.Ray;
+import com.github.severinnitsche.essentials.meta.help.ObjectInformation;
 import com.github.severinnitsche.essentials.meta.lights.abstracted.Light;
 import com.github.severinnitsche.utilities.math.MathUtil;
 import com.github.severinnitsche.utilities.math.Point;
@@ -18,6 +20,12 @@ public class LitEllipse extends TexturedEllipse implements Light {
   public LitEllipse(ThreeDObject[] objects, double strength, Texture texture, double roughness, Point pos, Versor r, double a, double b, double c) {
     super(texture, roughness, pos, r, a, b, c);
     light = new com.github.severinnitsche.essentials.meta.lights.implemented.Light(pos,objects,strength,null);
+  }
+  
+  @Override
+  public ObjectInformation collide(Ray ray) {
+    if(ray.getPosition().equals(getPosition())) return null;
+    return super.collide(ray);
   }
   
   @Override
@@ -50,7 +58,7 @@ public class LitEllipse extends TexturedEllipse implements Light {
   
   @Override
   public Point getPosition() {
-    return null;
+    return light.getPosition();
   }
   
   @Override

@@ -63,7 +63,7 @@ Lamp:
 
 Light:
   name: "Light"
-  alias: "light;sun;Sun"
+  alias: "light"
   class: "com.github.severinnitsche.essentials.meta.lights.implemented.Light"
   options:
     position: "Point"
@@ -189,3 +189,12 @@ LitEllipse:
     a: "double"
     b: "double"
     c: "double"
+
+Sun:
+  name: "Sun"
+  alias: "sun"
+  class: "com.github.severinnitsche.essentials.meta.lights.implemented.Sun"
+  options:
+    direction: "Vector"
+    models: "[Model]"
+    color: "Color"

@@ -10,11 +10,8 @@ import com.github.severinnitsche.utilities.visual.Color;
 
 public class Light implements com.github.severinnitsche.essentials.meta.lights.abstracted.Light {
 
-  public static final double SURFACE_DISTANCE = .01;
-  public static final double ZERO             = .1;
-
-  protected Point position = null;
-  protected ThreeDObject[] objects  = null;
+  protected Point position;
+  protected ThreeDObject[] objects;
   protected double strength;
   protected Color color;
   
@@ -25,6 +22,7 @@ public class Light implements com.github.severinnitsche.essentials.meta.lights.a
     this.color = color;
   }
   
+  @Override
   public double hasLightLevel(Point pos) {
     //Guard clauses
     if (position == null) throw new IllegalStateException("Position has to be not null");
@@ -79,11 +77,8 @@ public class Light implements com.github.severinnitsche.essentials.meta.lights.a
     else
       return 0;
   }
-
-  public boolean isPointLight() {
-    return true;
-  }
   
+  @Override
   public Vector[] getDirections(int samples) { return MathUtil.getVectorsOnUnitSphere(samples); }
   
   @Override

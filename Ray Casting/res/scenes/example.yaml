@@ -16,17 +16,17 @@ right:
 up:
   ilk: "Vector"
   arguments:
-    dimensions: "[0;1;0]"
+    dimensions: "[1;0;0]"
+
+light:
+  ilk: "Vector"
+  arguments:
+    dimensions: "[1;.1;.7]"
 
 marsCenter:
   ilk: "Point"
   arguments:
-    dimensions: "[4;0;10]"
-
-sunCenter:
-  ilk: "Point"
-  arguments:
-    dimensions: "[-2;0;10]"
+    dimensions: "[0;0;10]"
 
 red:
   ilk: "Color"
@@ -61,7 +61,7 @@ rotor:
   ilk: "Versor"
   arguments:
     axis: "up"
-    theta: "0"
+    theta: "1.57"
 
 ellipse:
   ilk: "texturedEllipse"
@@ -70,9 +70,9 @@ ellipse:
     roughness: "0"
     position: "marsCenter"
     rotation: "rotor"
-    a: "1"
-    b: "1"
-    c: "1"
+    a: "4"
+    b: "4"
+    c: "4"
 
 mars:
   ilk: "Container"
@@ -83,22 +83,16 @@ mars:
     strength: ".2"
 
 sun:
-  ilk: "litEllipse"
+  ilk: "Sun"
   arguments:
-    position: "sunCenter"
-    rotor: "rotor"
-    a: "3"
-    b: "3"
-    c: "3"
-    roughness: "0"
-    texture: "sunTexture"
-    strength: "10000"
-    objects: "[mars]"
+    models: "[mars]"
+    direction: "light"
+    color: "white"
 
 world:
   ilk: "world"
   arguments:
-    objects: "[mars;sun]"
+    objects: "[mars]"
     lights: "[sun]"
 
 viewer:

@@ -123,7 +123,7 @@ public class Viewer {
     int i = 0;
     for (Ray r : pointer) {
       colors[i] = world.colorFor(r, depth).getRGB();
-      loader.load(i+1,pointer.size());
+      if(i%(depth*depth)==0) loader.load(i+1,pointer.size());
       i++;
     }
     return colors;

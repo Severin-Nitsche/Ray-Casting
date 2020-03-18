@@ -27,20 +27,15 @@ public class BumpMap extends Texture {
     int y = (int)((img.getHeight() - 1) * clamp(v,0,1));
   
     int height1 = (byte)img.getRGB(x,y);
-    int height2 = (byte)img.getRGB((x+1)%img.getWidth(), y);
-    int height3 = (byte)img.getRGB(x,(y+1)%img.getWidth());
+    int height2 = (byte)img.getRGB((x+1)%img.getWidth(),y);
+    int height3 = (byte)img.getRGB(x,(y+1)%img.getHeight());
   
-    int dx = height2 - height1;
-    int dy = height3 - height1;
+    double mx = (height2 - height1) * img.getWidth();
+    double my = (height3 - height1) * img.getHeight();
     
-    Vector up = new Vector(dx,dy,1).normalize();
+    Vector up = new Vector(mx,my,1).normalize();
   
     return up;
-  }
-  
-  public static void main(String[] args) {
-    Logger.LOGGER.log(Vector.fromSpherical(0,0,1).toString());
-    Logger.LOGGER.log(new Vector(0,1,0).getSpherical(0)+" "+new Vector(0,1,0).getSpherical(1)+" "+new Vector(0,1,0).getSpherical(2));
   }
   
 }
